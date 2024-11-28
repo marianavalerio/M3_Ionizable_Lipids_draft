@@ -1,0 +1,19 @@
+[ moleculetype ]
+Ester  1
+[ atoms ]
+; nr type resnr residue atom cgnr charge mass
+1    C1    0    Ester    CA    1    0    72
+2    SN4a  0    Ester    GLA   2    0    54
+3    SN4a  0    Ester    GLB   3    0    54
+4    SC2   0    Ester    CX    4    0    54
+
+[ bonds ]
+; i  j  funct length
+1    2    1    0.47    5000 ;CA-GLA
+2    3    1    0.37    5000 ;GLA-GLB
+3    4    1    0.37    5000 ;GLB-CX
+
+[ angles ]
+;  i  j  k   funct   angle   force.c.
+1    2    3    2    110    20 ;CA-GLA-GLB
+2    3    4    2    125    35 ;GLA-GLB-CX

@@ -1,0 +1,42 @@
+[ moleculetype ]
+LI2  1
+[ atoms ]
+; nr type resnr residue atom cgnr charge mass
+   1    TP1        0    LI2     OH         1       0      36
+   2    SN4a       0    LI2     N1         2       0      54
+   3    C2         0    LI2     CA         3       0      74 
+   4    SN4a       0    LI2     GLA        4       0      54
+   5    C1         0    LI2     CA1        5       0      72
+   6    C1         0    LI2     CA2        6       0      72
+   7    C2         0    LI2     CB         7       0      72
+   8    SN4a       0    LI2     GLB        8       0      54
+   9    C1         0    LI2     CB1        9       0      72 
+  10    C1         0    LI2     CB2       10       0      72
+
+
+[ bonds ]
+; i  j  funct length
+   1       2       1    0.34    5000  ;OH-N1 
+   2       3       1    0.50    5000  ;N1-CA 
+   2       7       1    0.50    5000  ;N1-CB 
+   3       4       1    0.50    5000  ;CA-GLA 
+   4       5       1    0.50    5000  ;GLA-CA1 
+   5       6       b_C1_C1            ;CA1-CA2
+   7       8       1    0.50    5000  ;CB-GLB 
+   8       9       1    0.50    5000  ;GLB-CB1
+   9      10       b_C1_C1            ;CB1-CB2
+
+[ angles ]
+;  i  j  k   funct   angle   force.c.
+   1       2       3       2     118      15  ;OH-N1-CA 
+   1       2       7       2     118      15  ;OH-N1-CB 
+   3       2       7       2     118.5    15  ;CA-N1-CB 
+   2       3       4       2     150      35  ;N1-CA-GLA 
+   2       7       8       2     150      35  ;N1-CB-GLB  
+   3       4       5       2     120      10  ;CA-GLA-CA1 
+   4       5       6       a_SN4a_C1_C1       ;GLA-CA1-CA2 
+   7       8       9       2     120      55  ;CB-GLB-CB1 
+   8       9      10       a_SN4a_C1_C1       ;GLB-CB1-CB2 
+
+[ exclusions ]
+4 8  ;GLB-GLA

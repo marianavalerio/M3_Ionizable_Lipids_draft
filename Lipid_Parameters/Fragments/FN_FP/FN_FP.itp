@@ -1,0 +1,36 @@
+[ moleculetype ]
+FN  1
+[ atoms ]
+; nr type resnr residue atom cgnr charge mass
+1    SN4a  0    FN    N1     1    0    54
+2    C2    0    FN    C1A    2    0    72
+3    C2    0    FN    C1B    3    0    72
+
+[ bonds ]
+; i  j  funct length
+1    2    1    0.47    5000 ;N1-C1A
+1    3    1    0.47    5000 ;N1-C1B
+
+[ angles ]
+;  i  j  k   funct   angle   force.c.
+2    1    3    2    130    25 ;C1A-N1-C1B
+
+
+[ moleculetype ]
+FP  1
+[ atoms ]
+; nr type resnr residue atom cgnr charge mass
+1    SQ2p    0    FP    NP     1    1    54
+2    C2      0    FP    C1A    2    0    72
+3    C2      0    FP    C1B    3    0    72
+
+[ bonds ]
+; i  j  funct length
+1    2    1    0.47    5000 ;NP-C1A
+1    3    1    0.47    5000 ;NP-C1B
+
+[ angles ]
+;  i  j  k   funct   angle   force.c.
+2    1    3    2    130    25 ;C1A-NP-C1B
+~
+
