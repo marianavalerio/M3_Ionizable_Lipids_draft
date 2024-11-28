@@ -1,0 +1,22 @@
+; Water in middle compartment, kept with attractive FB restraints
+[ moleculetype ]
+MiddleWater     1
+
+[ atoms ]
+ 1 W  1 WN  WN 1 0
+
+[ position_restraints ]
+  1     2     5     2.670246649782022  50  ; attractive Z-layer
+  
+  
+; Water in out compartment, kept with repulsive FB restraints
+[ moleculetype ]
+OuterWater     1
+
+[ atoms ]
+ 1 W  1 WO  WO 1 0
+
+[ position_restraints ]
+  1     2     5     -3.670246649782022   50  ; repulsive Z-layer
+
+

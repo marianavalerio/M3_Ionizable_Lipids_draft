@@ -1,0 +1,59 @@
+[ moleculetype ]
+S1D  1
+[ atoms ]
+; nr type resnr residue atom cgnr charge mass
+   1    TP1        0    S1D     OH         1       0      36
+   2    SN4a       0    S1D     N3         2       0      54
+   3    SC2        0    S1D     CA         3       0      54 
+   4    SN4a       0    S1D     GLA        4       0      54
+   5    SC1        0    S1D     CA1        5       0      54
+   6    C1         0    S1D     CA2        6       0      72
+   7    C1         0    S1D     CA3        7       0      72
+   8    C2         0    S1D     CB         8       0      72
+   9    SN4a       0    S1D     GLB        9       0      54
+  10    SC2        0    S1D     CBX       10       0      54 
+  11    SC1        0    S1D     CB1       11       0      54
+  12    C1         0    S1D     CB2       12       0      72
+  13    SC1        0    S1D     CB3       13       0      54
+  14    C1         0    S1D     CB4       14       0      72
+
+
+[ bonds ]
+; i  j  funct length
+   1       2       1    0.34    5000  ;OH-N3 from amine2 fragment
+   2       3       1    0.50    5000  ;N3-CA from amine2 fragment
+   2       8       1    0.50    5000  ;N3-CB from amine2 fragment
+   3       4       1    0.37    5000  ;CA-GLA from Sc1_ester_Sc1 fragment
+   4       5       1    0.37    5000  ;GLA-CA1 from Sc1_ester_Sc1 fragment
+   5       6       b_SC1_C1           ;CA1-CA2
+   6       7       b_C1_C1            ;CA2-CA3
+   8       9       1    0.47    5000  ;CB-GLB from ester_long_branched_sat CHECK
+   9      10       1    0.37    5000  ;GLB-CBX from ester_long_branched_sat
+  10      11       1    0.37    5000  ;CBX-CB1 from ester_branched
+  10      13       1    0.37    5000  ;CBX-CB3 from ester_branched
+  11      12       1    0.50    5000  ;CB1-CB2 from ester_long_branched_sat
+  13      14       1    0.50    5000  ;CB3-CB4 from ester_long_branched_sat
+
+[ angles ]
+;  i  j  k   funct   angle   force.c.
+   1       2       3       2     118      15  ;OH-N3-CA from amine2 fragment
+   1       2       8       2     118      15  ;OH-N3-CB from amine2 fragment
+   3       2       8       2     118.5    15  ;CA-N3-CB from amine2 fragment
+   2       3       4       2     150      35  ;N3-CA-GLA from amine_link_ester
+   2       8       9       2     150      35  ;N3-CB-GLB  from amine_link_ester
+   3       4       5       2     120      55  ;CA-GLA-CA1 from SC1_ester_SC1 fragment 
+   8       9      10       2     120      55  ;CB-GLB-CBX from ester_long_branched_sat fragment
+   4       5       6       a_SN4a_C1_C1       ;GLA-CA1-CA2 
+   9      10      11       2     100      25  ;GLB-CBX-CB1 from ester_long_branched_sat fragment
+   9      10      13       2     100      25  ;GLB-CBX-CB3 from ester_long_branched_sat fragment
+  10      11      12       2     155      55  ;CBX-CB1-CB2 from ester_branched fragment
+  10      13      14       2     155      55  ;CBX-CB3-CB4 from ester_branched fragment
+   5       6       7       a_C1_C1_C1         ;CA1-CA2-CA3 
+  13      10      11       2     150      85  ;CB3-CBX-CB1 from ester_branched fragment
+
+[ exclusions ]
+  11 13 ;CB3-CB1
+  9  5  ;GLB-GLA
+
+[ pairs ]
+  11 13  1 4.100000e-01    2.350000e+00 ;CB3-CB1

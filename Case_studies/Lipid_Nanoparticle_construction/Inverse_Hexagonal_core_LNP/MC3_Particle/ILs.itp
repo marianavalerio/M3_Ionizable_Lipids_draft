@@ -1,0 +1,432 @@
+[ moleculetype ]
+MC3  1
+[ atoms ]
+; nr type resnr residue atom cgnr charge mass
+1    TN3a   0    MC3    N1     1    0    36
+2    TC2    0    MC3    CN     2    0    36
+3    SN4a   0    MC3    GLA    3    0    54
+4    SC2    0    MC3    CX     4    0    54
+5    C1     0    MC3    C1A    5    0    72
+6    C4h    0    MC3    D2A    6    0    72
+7    C4h    0    MC3    D3A    7    0    72
+8    C1     0    MC3    C4A    8    0    72
+9    C1     0    MC3    C1B    9    0    72
+10   C4h    0    MC3    D2B    10   0    72
+11   C4h    0    MC3    D3B    11   0    72
+12   C1     0    MC3    C4B    12   0    72
+
+[ bonds ]
+; i  j  funct length
+1     2    1    0.34    5000  ;N1-CN
+2     3    1    0.365   5000  ;CN-GLA
+3     4    1    0.365   5000  ;GLA-CX
+4     5    1    0.455   5000  ;CX-C1A
+4     9    1    0.455   5000  ;CX-C1B
+5     6 	b_C1_C4       ;C1A-D2A
+6     7 	b_C4_C4       ;D2A-D3A
+7     8 	b_C4_C4       ;D3A-C4A
+9    10 	b_C1_C4       ;C1B-D2B
+10   11 	b_C4_C4       ;D2B-D3B
+11   12 	b_C4_C4       ;D3B-C4B
+
+
+[ angles ]
+;  i  j  k   funct   angle   force.c.
+1    2    3    1    155    15 ;N1-CN-GLA
+2    3    4    1    130    20 ;CN-GLA-CX
+3    4    9    1    110    15 ;GLA-CX-C1B
+3    4    5    1    110    15 ;GLA-CX-C1A
+5    4    9    1    125    25 ;C1A-CX-C1B from MC3 amine fragment
+4    5    6    1    140    15 ;CX-C1A-D2A
+4    9   10    1    140    15 ;CX-C1B-D2B
+5    6    7    a_C1_C4_C4     ;C1A-D2A-D3A
+6    7    8    a_C4_C4_C1     ;D2A-D3A-C4A
+9   10   11    a_C1_C4_C4     ;C1B-D2B-D3B
+10  11   12    a_C1_C4_C4     ;D3B-D3B-C4B
+
+[ exclusions ]
+5 9
+
+[ pairs ] 
+5 9  1 4.100000e-01    2.350000e+00
+
+
+[ moleculetype ]
+MC3H  1
+[ atoms ]
+; nr type resnr residue atom cgnr charge mass
+1    TQ2p   0    MC3H    NP     1    1    36
+2    TC3    0    MC3H    CN     2    0    36
+3    SN4a   0    MC3H    GLA    3    0    54
+4    SC2    0    MC3H    CX     4    0    54
+5    C1     0    MC3H    C1A    5    0    72
+6    C4h    0    MC3H    D2A    6    0    72
+7    C4h    0    MC3H    D3A    7    0    72
+8    C1     0    MC3H    C4A    8    0    72
+9    C1     0    MC3H    C1B    9    0    72
+10   C4h    0    MC3H    D2B    10   0    72
+11   C4h    0    MC3H    D3B    11   0    72
+12   C1     0    MC3H    C4B    12   0    72
+
+[ bonds ]
+; i  j  funct length
+1     2    1    0.34     5000 ;N1-CN
+2     3    1    0.365    5000 ;CN-GLA
+3     4    1    0.365    5000 ;GLA-CX
+4     5    1    0.455    5000 ;CX-C1A
+4     9    1    0.455    5000 ;CX-C1B
+5     6 	b_C1_C4       ;C1A-D2A
+6     7 	b_C4_C4       ;D2A-D3A
+7     8 	b_C4_C4       ;D3A-C4A
+9    10 	b_C1_C4       ;C1B-D2B
+10   11 	b_C4_C4       ;D2B-D3B
+11   12 	b_C4_C4       ;D3B-C4B
+
+[ angles ]
+;  i  j  k   funct   angle   force.c.
+1    2    3    1    152    10 ;N1-CN-GLA
+2    3    4    1    137    15 ;CN-GLA-CX
+3    4    9    1    110    10 ;GLA-CX-C1B
+3    4    5    1    110    10 ;GLA-CX-C1A
+5    4    9    1    125    25 ;C1A-CX-C1B
+4    5    6    1    140    15 ;CX-C1A-D2A
+4    9   10    1    140    15 ;CX-C1B-D2B
+5    6    7    a_C1_C4_C4     ;C1A-D2A-D3A
+6    7    8    a_C4_C4_C1     ;D2A-D3A-C4A
+9   10   11    a_C1_C4_C4     ;C1B-D2B-D3B
+10  11   12    a_C1_C4_C4     ;D3B-D3B-C4B
+
+
+[ exclusions ]
+5 9
+
+[ pairs ] 
+5 9  1 4.100000e-01    2.350000e+00
+
+
+
+[ moleculetype ]
+LI5H 1
+[ atoms ]
+; nr type resnr residue atom cgnr charge mass
+   1    TP1        0    LI5H    OH         1       0      36
+   2    SQ2        0    LI5H    NP         2       1      54
+   3    SC2        0    LI5H    CA         3       0      54 
+   4    SN4a       0    LI5H    GLA        4       0      54
+   5    C1         0    LI5H    CA1        5       0      54
+   6    C1         0    LI5H    CA2        6       0      72
+   7    C2         0    LI5H    CB         7       0      72
+   8    SN4a       0    LI5H    GLB        8       0      54
+   9    SC2        0    LI5H    CBX        9       0      54 
+  10    SC1        0    LI5H    CB1       10       0      54
+  11    C1         0    LI5H    CB2       11       0      72
+  12    SC1        0    LI5H    CB3       12       0      54
+  13    C1         0    LI5H    CB4       13       0      72
+
+
+[ bonds ]
+; i  j  funct length
+   1       2       1    0.34    5000  ;OH-NP 
+   2       3       1    0.47    5000  ;NP-CA 
+   2       7       1    0.47    5000  ;NP-CB 
+   3       4       1    0.37    5000  ;CA-GLA 
+   4       5       1    0.37    5000  ;GLA-CA1
+   5       6       b_C1_C1            ;CA1-CA2
+   7       8       1    0.47    5000  ;CB-GLB 
+   8       9       1    0.37    5000  ;GLB-CBX 
+   9      10       1    0.37    5000  ;CBX-CB1 
+   9      12       1    0.37    5000  ;CBX-CB3 
+  10      11       1    0.50    5000  ;CB1-CB2 
+  12      13       1    0.50    5000  ;CB3-CB4 
+
+[ angles ]
+;  i  j  k   funct   angle   force.c.
+   1       2       3       2     118      15  ;OH-NP-CA 
+   1       2       7       2     118      15  ;OH-NP-CB 
+   3       2       7       2     118.5    15  ;CA-NP-CB 
+   2       3       4       2     150      35  ;NP-CA-GLA 
+   2       7       8       2     150      35  ;NP-CB-GLB  
+   3       4       5       2     120      55  ;CA-GLA-CA1 
+   7       8       9       2     120      55  ;CB-GLB-CBX 
+   4       5       6       a_SN4a_C1_C1       ;GLA-CA1-CA2 
+   8       9      10       2     100      25  ;GLB-CBX-CB1 
+   8       9      12       2     100      25  ;GLB-CBX-CB3 
+   9      12      13       2     155      55  ;CBX-CB1-CB2 
+   9      12      13       2     155      55  ;CBX-CB3-CB4 
+  12       9      10       2     150      85  ;CB3-CBX-CB1 
+
+[ exclusions ]
+  12 10 ;CB3-CB1
+  8  4  ;GLB-GLA
+
+[ pairs ]
+  12 10  1 4.100000e-01    2.350000e+00 ;CB3-CB1
+
+
+
+
+[ moleculetype ]
+LI5  1
+[ atoms ]
+; nr type resnr residue atom cgnr charge mass
+   1    TP1        0    LI5     OH         1       0      36
+   2    SN4a       0    LI5     N1         2       0      54
+   3    SC2        0    LI5     CA         3       0      54 
+   4    SN4a       0    LI5     GLA        4       0      54
+   5    C1         0    LI5     CA1        5       0      54
+   6    C1         0    LI5     CA2        6       0      72
+   7    C2         0    LI5     CB         7       0      72
+   8    SN4a       0    LI5     GLB        8       0      54
+   9    SC2        0    LI5     CBX        9       0      54 
+  10    SC1        0    LI5     CB1       10       0      54
+  11    C1         0    LI5     CB2       11       0      72
+  12    SC1        0    LI5     CB3       12       0      54
+  13    C1         0    LI5     CB4       13       0      72
+
+
+[ bonds ]
+; i  j  funct length
+   1       2       1    0.34    5000  ;OH-N1 
+   2       3       1    0.50    5000  ;N1-CA 
+   2       7       1    0.50    5000  ;N1-CB 
+   3       4       1    0.37    5000  ;CA-GLA 
+   4       5       1    0.37    5000  ;GLA-CA1
+   5       6       b_C1_C1            ;CA1-CA2
+   7       8       1    0.47    5000  ;CB-GLB 
+   8       9       1    0.37    5000  ;GLB-CBX 
+   9      10       1    0.37    5000  ;CBX-CB1 
+   9      12       1    0.37    5000  ;CBX-CB3 
+  10      11       1    0.50    5000  ;CB1-CB2 
+  12      13       1    0.50    5000  ;CB3-CB4 
+
+[ angles ]
+;  i  j  k   funct   angle   force.c.
+   1       2       3       2     118      15  ;OH-N1-CA 
+   1       2       7       2     118      15  ;OH-N1-CB 
+   3       2       7       2     118.5    15  ;CA-N1-CB 
+   2       3       4       2     150      35  ;N1-CA-GLA 
+   2       7       8       2     150      35  ;N1-CB-GLB  
+   3       4       5       2     120      55  ;CA-GLA-CA1 
+   7       8       9       2     120      55  ;CB-GLB-CBX 
+   4       5       6       a_SN4a_C1_C1       ;GLA-CA1-CA2 
+   8       9      10       2     100      25  ;GLB-CBX-CB1 
+   8       9      12       2     100      25  ;GLB-CBX-CB3 
+   9      12      13       2     155      55  ;CBX-CB1-CB2 
+   9      12      13       2     155      55  ;CBX-CB3-CB4 
+  12       9      10       2     150      85  ;CB3-CBX-CB1 
+
+[ exclusions ]
+  12 10 ;CB3-CB1
+  8  4  ;GLB-GLA
+
+[ pairs ]
+  12 10  1 4.100000e-01    2.350000e+00 ;CB3-CB1
+
+
+[ moleculetype ]
+LI2  1
+[ atoms ]
+; nr type resnr residue atom cgnr charge mass
+   1    TP1        0    LI2     OH         1       0      36
+   2    SN4a       0    LI2     N1         2       0      54
+   3    C2         0    LI2     CA         3       0      74 
+   4    SN4a       0    LI2     GLA        4       0      54
+   5    C1         0    LI2     CA1        5       0      72
+   6    C1         0    LI2     CA2        6       0      72
+   7    C2         0    LI2     CB         7       0      72
+   8    SN4a       0    LI2     GLB        8       0      54
+   9    C1         0    LI2     CB1        9       0      72 
+  10    C1         0    LI2     CB2       10       0      72
+
+
+[ bonds ]
+; i  j  funct length
+   1       2       1    0.34    5000  ;OH-N1 
+   2       3       1    0.50    5000  ;N1-CA 
+   2       7       1    0.50    5000  ;N1-CB 
+   3       4       1    0.50    5000  ;CA-GLA 
+   4       5       1    0.50    5000  ;GLA-CA1 
+   5       6       b_C1_C1            ;CA1-CA2
+   7       8       1    0.50    5000  ;CB-GLB 
+   8       9       1    0.50    5000  ;GLB-CB1
+   9      10       b_C1_C1            ;CB1-CB2
+
+[ angles ]
+;  i  j  k   funct   angle   force.c.
+   1       2       3       2     118      15  ;OH-N1-CA 
+   1       2       7       2     118      15  ;OH-N1-CB 
+   3       2       7       2     118.5    15  ;CA-N1-CB 
+   2       3       4       2     150      35  ;N1-CA-GLA 
+   2       7       8       2     150      35  ;N1-CB-GLB  
+   3       4       5       2     120      10  ;CA-GLA-CA1 
+   4       5       6       a_SN4a_C1_C1       ;GLA-CA1-CA2 
+   7       8       9       2     120      55  ;CB-GLB-CB1 
+   8       9      10       a_SN4a_C1_C1       ;GLB-CB1-CB2 
+
+[ exclusions ]
+4 8  ;GLB-GLA
+[ moleculetype ]
+LI2H  1
+[ atoms ]
+; nr type resnr residue atom cgnr charge mass
+   1    TP1        0    LI2H     OH         1       0      36
+   2    SQ2p       0    LI2H     NP         2       1      54
+   3    C3         0    LI2H     CA         3       0      74 
+   4    SN4a       0    LI2H     GLA        4       0      54
+   5    C1         0    LI2H     CA1        5       0      72
+   6    C1         0    LI2H     CA2        6       0      72
+   7    C3         0    LI2H     CB         7       0      72
+   8    SN4a       0    LI2H     GLB        8       0      54
+   9    C1         0    LI2H     CB1        9       0      72 
+  10    C1         0    LI2H     CB2       10       0      72
+
+
+[ bonds ]
+; i  j  funct length
+   1       2       1    0.34    5000  ;OH-NP
+   2       3       1    0.47    5000  ;NP-CA
+   2       7       1    0.47    5000  ;NP-CB
+   3       4       1    0.50    5000  ;CA-GLA 
+   4       5       1    0.50    5000  ;GLA-CA1 
+   5       6       b_C1_C1            ;CA1-CA2
+   7       8       1    0.50    5000  ;CB-GLB 
+   8       9       1    0.50    5000  ;GLB-CB1
+   9      10       b_C1_C1            ;CB1-CB2
+
+[ angles ]
+;  i  j  k   funct   angle   force.c.
+   1       2       3       2     118      15  ;OH-NP-CA
+   1       2       7       2     118      15  ;OH-NP-CB
+   3       2       7       2     118.5    15  ;CA-NP-CB 
+   2       3       4       2     150      35  ;NP-CA-GLA 
+   2       7       8       2     150      35  ;NP-CB-GLB 
+   3       4       5       2     120      10  ;CA-GLA-CA1 
+   4       5       6       a_SN4a_C1_C1       ;GLA-CA1-CA2 
+   7       8       9       2     120      55  ;CB-GLB-CB1 
+   8       9      10       a_SN4a_C1_C1       ;GLB-CB1-CB2 
+
+[ exclusions ]
+ 4 8  ;GLB-GLA
+[ moleculetype ]
+
+LI10  1
+[ atoms ]
+; nr type resnr residue atom cgnr charge mass
+   1    TP1        0    LI10     OH         1       0      36
+   2    SN4a       0    LI10     N1         2       0      54
+   3    SC2        0    LI10     CA         3       0      54 
+   4    SN4a       0    LI10     GLA        4       0      54
+   5    SC1        0    LI10     CA1        5       0      54
+   6    C1         0    LI10     CA2        6       0      72
+   7    C1         0    LI10     CA3        7       0      72
+   8    SC2        0    LI10     CB         8       0      54 
+   9    SN4a       0    LI10     GLB        9       0      54
+  10    SC2        0    LI10     CBX       10       0      54 
+  11    C1         0    LI10     CB1       11       0      54 
+  12    C1         0    LI10     CB2       12       0      72
+  13    C1         0    LI10     CB3       13       0      54 
+  14    C1         0    LI10     CB4       14       0      72
+
+
+[ bonds ]
+; i  j  funct length
+   1       2       1    0.34    5000  ;OH-N1 
+   2       3       1    0.50    5000  ;N1-CA 
+   2       8       1    0.50    5000  ;N1-CB 
+   3       4       1    0.37    5000  ;CA-GLA 
+   4       5       1    0.37    5000  ;GLA-CA1
+   5       6       b_SC1_C1           ;CA1-CA2
+   6       7       b_C1_C1            ;CA2-CA3
+   8       9       1    0.37    5000  ;CB-GLB 
+   9      10       1    0.37    5000  ;GLB-CBX
+  10      11       1    0.47    5000  ;CBX-CB1
+  10      13       1    0.47    5000  ;CBX-CB3
+  11      12       1    0.50    5000  ;CB1-CB2
+  13      14       1    0.50    5000  ;CB3-CB4
+
+[ angles ]
+;  i  j  k   funct   angle   force.c.
+   1       2       3       2     118      15  ;OH-N1-CA 
+   1       2       8       2     118      15  ;OH-N1-CB 
+   3       2       8       2     118.5    15  ;CA-N1-CB 
+   2       3       4       2     150      35  ;N1-CA-GLA 
+   2       8       9       2     150      35  ;N1-CB-GLB 
+   3       4       5       2     120      55  ;CA-GLA-CA1
+   8       9      10       2     120      55  ;CB-GLB-CBX
+   4       5       6       a_SN4a_C1_C1       ;GLA-CA1-CA2 
+   9      10      11       2     100      25  ;GLB-CBX-CB1 
+   9      10      13       2     100      25  ;GLB-CBX-CB3 
+  10      11      12       2     155      65  ;CBX-CB1-CB2 
+  10      13      14       2     155      55  ;CBX-CB3-CB4 
+   5       6       7       a_C1_C1_C1         ;CA1-CA2-CA3 
+  13      10      11       2     150      85  ;CB3-CBX-CB1 
+
+[ exclusions ]
+  11 13 ;CB3-CB1
+  9  4  ;GLB-GLA
+
+[ pairs ]
+  11 13  1 4.100000e-01    2.350000e+00 ;CB3-CB1
+
+[ moleculetype ]
+L1P  1
+[ atoms ]
+; nr type resnr residue atom cgnr charge mass
+   1    TP1        0    L1P     OH         1       0      36
+   2    SQ2p       0    L1P     NP         2       1      54
+   3    SC3        0    L1P     CA         3       0      54 
+   4    SN4a       0    L1P     GLA        4       0      54
+   5    SC1        0    L1P     CA1        5       0      54
+   6    C1         0    L1P     CA2        6       0      72
+   7    C1         0    L1P     CA3        7       0      72
+   8    SC3        0    L1P     CB         8       0      54 
+   9    SN4a       0    L1P     GLB        9       0      54
+  10    SC2        0    L1P     CBX       10       0      54 
+  11    C1         0    L1P     CB1       11       0      54 
+  12    C1         0    L1P     CB2       12       0      72
+  13    C1         0    L1P     CB3       13       0      54 
+  14    C1         0    L1P     CB4       14       0      72
+
+
+[ bonds ]
+; i  j  funct length
+   1       2       1    0.34    5000  ;OH-NP
+   2       3       1    0.47    5000  ;NP-CA
+   2       8       1    0.47    5000  ;NP-CB
+   1       2       1    0.34    5000  ;OH-N3 
+   2       3       1    0.50    5000  ;N3-CA 
+   2       8       1    0.50    5000  ;N3-CB 
+   3       4       1    0.37    5000  ;CA-GLA
+   4       5       1    0.37    5000  ;GLA-CA1 
+   5       6       b_SC1_C1           ;CA1-CA2
+   6       7       b_C1_C1            ;CA2-CA3
+   8       9       1    0.37    5000  ;CB-GLB 
+   9      10       1    0.37    5000  ;GLB-CBX 
+  10      11       1    0.47    5000  ;CBX-CB1 
+  10      13       1    0.47    5000  ;CBX-CB3 
+  11      12       1    0.50    5000  ;CB1-CB2 
+  13      14       1    0.50    5000  ;CB3-CB4 
+
+[ angles ]
+;  i  j  k   funct   angle   force.c.
+   1       2       3       2     118      15  ;OH-NP-CA
+   1       2       8       2     118      15  ;OH-NP-CB
+   3       5       6       2     118.5    15  ;CA-NP-CB 
+   2       3       5       2     150      35  ;NP-CA-GLA 
+   2       8      10       2     150      35  ;NP-CB-GLB 
+   3       4       5       2     120      55  ;CA-GLA-CA1 
+   8       9      10       2     120      55  ;CB-GLB-CBX 
+   4       5       6       a_SN4a_C1_C1       ;GLA-CA1-CA2 
+   9      10      11       2     100      25  ;GLB-CBX-CB1 
+   9      10      13       2     100      25  ;GLB-CBX-CB3 
+  10      11      12       2     155      65  ;CBX-CB1-CB2 
+  10      13      14       2     155      55  ;CBX-CB3-CB4 
+   5       6       7       a_C1_C1_C1         ;CA1-CA2-CA3 
+  13      10      11       2     150      85  ;CB3-CBX-CB1 
+
+[ exclusions ]
+  11 13 ;CB3-CB1
+  9  4  ;GLB-GLA
+
+[ pairs ]
+  11 13  1 4.100000e-01    2.350000e+00 ;CB3-CB1
