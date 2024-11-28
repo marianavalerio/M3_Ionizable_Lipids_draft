@@ -1,0 +1,43 @@
+[ moleculetype ]
+NE  1
+[ atoms ]
+; nr type resnr residue atom cgnr charge mass
+1    TN3a    0    NE    N1     1    0    36
+2    SC2     0    NE    CX     2    0    54
+3    SN3r    0    NE    GL1    3    0    54
+4    SN3r    0    NE    GL2    4    0    54
+
+[ bonds ]
+; i  j  funct length
+1    2    1    0.40    4000 ;N1-CX Scaled for SASA
+2    3    1    0.43    3000 ;CX-GL1 Scaled for SASA
+2    4    1    0.43    3000 ;CX-GL2
+
+[ angles ]
+;  i  j  k      funct   angle   force.c.
+1    2    4    2    130    20 ;N1-CX-GL2
+1    2    3    2    130    20 ;N1-CX-GL2
+3    2    4    2    90     10 ;GL1-CX-GL2
+
+
+[ moleculetype ]
+NP  1
+[ atoms ]
+; nr type resnr residue atom cgnr charge mass
+1    TQ2p    0    NP    N1     1    1    36
+2    SC2     0    NP    CX     2    0    54
+3    SN3r    0    NP    GL1    3    0    54
+4    SN3r    0    NP    GL2    4    0    54
+
+[ bonds ]
+; i  j  funct length
+1    2    1    0.40    4000 ;N1-CX Scaled for SASA
+2    3    1    0.43    3000 ;CX-GL1 Scaled for SASA
+2    4    1    0.43    3000 ;CX-GL2
+
+[ angles ]
+;  i  j  k      funct   angle   force.c.
+1    2    4    2    110    15 ;N1-CX-GL2
+1    2    3    2    135    20 ;N1-CX-GL2
+3    2    4    2    110    10 ;GL1-CX-GL2
+

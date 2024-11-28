@@ -1,0 +1,41 @@
+[ moleculetype ]
+AE  1
+[ atoms ]
+; nr type resnr residue atom cgnr charge mass
+   1    SN3a       0    AE     N1         1       0      54
+   2    C2         0    AE     CN         2       0      72
+   3    SN4a       0    AE     GL1        3       0      54
+   4    C1         0    AE     C1A        4       0      72
+
+[ bonds ]
+; i  j  funct length
+   1       2       1    0.50    2500  ;N1-CN Scaled for SASA
+   2       3       1    0.47    2500  ;CN-GL1 
+   3       4       1    0.47    2500  ;GL1-C1A 
+
+[ angles ]
+;  i  j  k   funct   angle   force.c.
+   1       2       3       2     150      15  ;N1-CN-GL1
+   2       3       4       2     120      15  ;CN-GL1-C1A
+
+
+[ moleculetype ]
+AP  1
+[ atoms ]
+; nr type resnr residue atom cgnr charge mass
+   1    SQ2p       0    AP     NP         1       1      54
+   2    C2         0    AP     CN         2       0      72
+   3    SN4a       0    AP     GL1        3       0      54
+   4    C1         0    AP     C1A        4       0      72
+
+[ bonds ]
+; i  j  funct length
+   1       2       1    0.47    2500  ;NP-CN Scaled for SASA
+   2       3       1    0.47    2500  ;CN-GL1 Scaled for SASA
+   3       4       1    0.47    2500  ;GL1-C1A Scaled for SASA
+
+[ angles ]
+;  i  j  k   funct   angle   force.c.
+   1       2       3       2     150      15  ;NP-CN-GL1
+   2       3       4       2     120      15  ;CN-GL1-C1A
+

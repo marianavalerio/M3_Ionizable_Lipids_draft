@@ -1,0 +1,16 @@
+[ moleculetype ]
+C4h_ester_C4h  1
+[ atoms ]
+; nr type resnr residue atom cgnr charge mass
+1    C4h    0    C4h_ester_C4h    C1A    1    0    72
+2    SN4a   0    C4h_ester_C4h    GLA    2    0    54
+3    C4h    0    C4h_ester_C4h    C1B    3    0    72
+
+[ bonds ]
+; i  j  funct length
+1    2    1    0.47    5000 ;C1A-GLA
+2    3    1    0.50    5000 ;GLA-C1B
+
+[ angles ]
+;  i  j  k   funct   angle   force.c.
+1    2    3    2    120    15 :C1A-GLA-C1B
