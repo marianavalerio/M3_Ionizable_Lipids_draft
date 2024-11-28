@@ -1,0 +1,14 @@
+This is the equlibrated Lipid 10 (fully charge) particle including cholesterol and DSPC (no PEGylated lipids).
+The RNA is dsRNA, 21nt poly A/U.
+
+
+For the endosomal membrane composition, the model membrane we used is the A8 simplistic membrane from here (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7553384/)
+
+The insane commando that has been used for the PMFs is : 
+> insane.py -u POPC:24 -u PAPC:12 -u POPE:2 -u DIPE:6 -u DPSM:24 -u CHOL:31 -l POPC:14 -l PAPC:8 -l POPE:5 -l DIPE:16 -l DPSM:11 -l PAPS:25 -l SAP6:2 -l CHOL:28 -x 10 -y 10 -z 8 -o A8.gro -p topol.top
+
+
+For the endosomal vesicle the tool TS2CG can be used, using the same scaling across the leaflets, but then of course relaxation of the vesicle with some channels is important. 
+
+The ILs.itp contain parameters for MC3, Lipid 2 and Lipid 10, in both protonated and deprotonated form.
+Generally the headgroup bead is N1/NP for neutral and charged, respectively. 

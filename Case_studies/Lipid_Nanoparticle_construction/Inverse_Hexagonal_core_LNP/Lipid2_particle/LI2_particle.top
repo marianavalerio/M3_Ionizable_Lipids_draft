@@ -1,0 +1,17 @@
+#include "Martini_ITPs/martini_v3.0.0.itp"
+#include "martini_v3.0_ffbonded.itp"
+#include "RNA.itp"
+#include "martini_v3.0.0_phospholipids_v1.itp"
+#include "ILs.itp"
+#include "martini_v3.0_sterols_v1.0.itp"
+#include "martini_v3.0.0_solvents_v1.itp"
+#include "martini_v3.0.0_ions_v1.itp"
+[ system ]
+LNP
+
+[ molecules ]
+#include "Hexagon_coat_solv_mol_counting.top"
+WN          231420
+NA               631
+CL               631
+CL               961
