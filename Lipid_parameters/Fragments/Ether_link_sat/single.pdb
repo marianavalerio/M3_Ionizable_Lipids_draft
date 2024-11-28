@@ -1,0 +1,42 @@
+TITLE     MDANALYSIS FRAME 0: Created by PDBWriter
+CRYST1   38.000   38.000   38.000  90.00  90.00  90.00 P 1           1
+ATOM      1  C00 LIG X   1      22.030  10.660  21.610  1.00  0.00      SYST  
+ATOM      2  C01 LIG X   1      21.090  11.770  21.950  1.00  0.00      SYST  
+ATOM      3  C02 LIG X   1      21.570   9.290  22.200  1.00  0.00      SYST  
+ATOM      4  C03 LIG X   1      20.380   8.650  21.580  1.00  0.00      SYST  
+ATOM      5  C04 LIG X   1      20.020   7.260  22.150  1.00  0.00      SYST  
+ATOM      6  C05 LIG X   1      18.930   6.550  21.300  1.00  0.00      SYST  
+ATOM      7  C06 LIG X   1      18.960   4.970  21.450  1.00  0.00      SYST  
+ATOM      8  C07 LIG X   1      18.220   4.350  20.260  1.00  0.00      SYST  
+ATOM      9  C08 LIG X   1      21.680  13.080  21.480  1.00  0.00      SYST  
+ATOM     10  C09 LIG X   1      21.590  13.240  19.990  1.00  0.00      SYST  
+ATOM     11  C0A LIG X   1      22.160  14.540  19.530  1.00  0.00      SYST  
+ATOM     12  O0B LIG X   1      23.480  14.290  19.260  1.00  0.00      SYST  
+ATOM     13  C0C LIG X   1      23.980  15.030  18.150  1.00  0.00      SYST  
+ATOM     14  H0D LIG X   1      25.030  14.730  18.070  1.00  0.00      SYST  
+ATOM     15  H0E LIG X   1      23.850  16.110  18.300  1.00  0.00      SYST  
+ATOM     16  H0F LIG X   1      23.540  14.720  17.200  1.00  0.00      SYST  
+ATOM     17  H0G LIG X   1      22.130  15.290  20.310  1.00  0.00      SYST  
+ATOM     18  H0H LIG X   1      21.590  14.810  18.640  1.00  0.00      SYST  
+ATOM     19  H0I LIG X   1      20.530  13.280  19.720  1.00  0.00      SYST  
+ATOM     20  H0J LIG X   1      21.970  12.340  19.510  1.00  0.00      SYST  
+ATOM     21  H0K LIG X   1      22.680  13.310  21.850  1.00  0.00      SYST  
+ATOM     22  H0M LIG X   1      20.970  13.800  21.880  1.00  0.00      SYST  
+ATOM     23  H0N LIG X   1      21.010  11.890  23.030  1.00  0.00      SYST  
+ATOM     24  H0O LIG X   1      20.140  11.430  21.530  1.00  0.00      SYST  
+ATOM     25  H0P LIG X   1      22.120  10.470  20.540  1.00  0.00      SYST  
+ATOM     26  H0Q LIG X   1      23.080  10.790  21.890  1.00  0.00      SYST  
+ATOM     27  H0R LIG X   1      22.410   8.630  22.000  1.00  0.00      SYST  
+ATOM     28  H0S LIG X   1      21.510   9.420  23.280  1.00  0.00      SYST  
+ATOM     29  H0T LIG X   1      20.400   8.660  20.490  1.00  0.00      SYST  
+ATOM     30  H0U LIG X   1      19.450   9.200  21.720  1.00  0.00      SYST  
+ATOM     31  H0V LIG X   1      19.780   7.430  23.200  1.00  0.00      SYST  
+ATOM     32  H0W LIG X   1      20.930   6.670  22.300  1.00  0.00      SYST  
+ATOM     33  H0X LIG X   1      17.970   6.940  21.620  1.00  0.00      SYST  
+ATOM     34  H0Y LIG X   1      19.010   6.860  20.260  1.00  0.00      SYST  
+ATOM     35  H0Z LIG X   1      18.590   4.640  22.430  1.00  0.00      SYST  
+ATOM     36  H10 LIG X   1      20.020   4.720  21.500  1.00  0.00      SYST  
+ATOM     37  H11 LIG X   1      18.450   3.290  20.230  1.00  0.00      SYST  
+ATOM     38  H12 LIG X   1      17.130   4.440  20.300  1.00  0.00      SYST  
+ATOM     39  H13 LIG X   1      18.560   4.730  19.290  1.00  0.00      SYST  
+END

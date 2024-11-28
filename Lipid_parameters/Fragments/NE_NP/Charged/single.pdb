@@ -1,0 +1,37 @@
+TITLE     MDANALYSIS FRAME 0: Created by PDBWriter
+CRYST1   37.193   37.193   37.193  90.00  90.00  90.00 P 1           1
+ATOM      1  C00 UNL X   1       7.290  15.010  30.370  1.00  0.00      SYST  
+ATOM      2  N01 UNL X   1       6.950  13.660  29.530  1.00  0.00      SYST  
+ATOM      3  H02 UNL X   1       7.580  12.930  29.820  1.00  0.00      SYST  
+ATOM      4  C03 UNL X   1       5.520  12.880  29.670  1.00  0.00      SYST  
+ATOM      5  C04 UNL X   1       7.440  13.700  28.010  1.00  0.00      SYST  
+ATOM      6  C05 UNL X   1       9.130  13.900  27.830  1.00  0.00      SYST  
+ATOM      7  O06 UNL X   1       9.420  13.250  26.440  1.00  0.00      SYST  
+ATOM      8  C07 UNL X   1       9.520  11.790  26.160  1.00  0.00      SYST  
+ATOM      9  C08 UNL X   1      10.870  11.240  27.010  1.00  0.00      SYST  
+ATOM     10  C09 UNL X   1       9.510  15.560  27.750  1.00  0.00      SYST  
+ATOM     11  O0A UNL X   1      10.970  15.740  27.290  1.00  0.00      SYST  
+ATOM     12  C0B UNL X   1      12.160  15.310  28.170  1.00  0.00      SYST  
+ATOM     13  C0C UNL X   1      13.610  15.170  27.270  1.00  0.00      SYST  
+ATOM     14  H0D UNL X   1       6.880  15.880  29.860  1.00  0.00      SYST  
+ATOM     15  H0E UNL X   1       6.880  15.020  31.380  1.00  0.00      SYST  
+ATOM     16  H0F UNL X   1       8.380  15.040  30.470  1.00  0.00      SYST  
+ATOM     17  H0G UNL X   1       5.320  12.770  30.740  1.00  0.00      SYST  
+ATOM     18  H0H UNL X   1       4.750  13.450  29.150  1.00  0.00      SYST  
+ATOM     19  H0I UNL X   1       5.610  11.920  29.160  1.00  0.00      SYST  
+ATOM     20  H0J UNL X   1       7.100  12.770  27.540  1.00  0.00      SYST  
+ATOM     21  H0K UNL X   1       7.020  14.550  27.480  1.00  0.00      SYST  
+ATOM     22  H0M UNL X   1       9.640  13.370  28.650  1.00  0.00      SYST  
+ATOM     23  H0N UNL X   1       8.620  11.290  26.530  1.00  0.00      SYST  
+ATOM     24  H0O UNL X   1       9.750  11.660  25.100  1.00  0.00      SYST  
+ATOM     25  H0P UNL X   1      10.650  11.360  28.070  1.00  0.00      SYST  
+ATOM     26  H0Q UNL X   1      11.100  10.210  26.750  1.00  0.00      SYST  
+ATOM     27  H0R UNL X   1      11.680  11.910  26.730  1.00  0.00      SYST  
+ATOM     28  H0S UNL X   1       8.850  16.090  27.070  1.00  0.00      SYST  
+ATOM     29  H0T UNL X   1       9.440  16.040  28.730  1.00  0.00      SYST  
+ATOM     30  H0U UNL X   1      12.250  16.080  28.940  1.00  0.00      SYST  
+ATOM     31  H0V UNL X   1      11.950  14.300  28.540  1.00  0.00      SYST  
+ATOM     32  H0W UNL X   1      13.680  16.100  26.700  1.00  0.00      SYST  
+ATOM     33  H0X UNL X   1      14.460  15.110  27.950  1.00  0.00      SYST  
+ATOM     34  H0Y UNL X   1      13.460  14.320  26.610  1.00  0.00      SYST  
+END

@@ -1,0 +1,82 @@
+[ moleculetype ]
+K2  1
+[ atoms ]
+; nr type resnr residue atom cgnr charge mass
+1    TN3a  0    K2    N1    1    0    36
+2    TC2   0    K2    CN    2    0    36
+3    TN5r  0    K2    GL1   3    0    36
+4    TN5r  0    K2    GL2   4    0    36
+5    SC2   0    K2    CX    5    0    54
+6    C1    0    K2    C1A   6    0    72
+7    C1    0    K2    C1B   7    0    72
+
+[ bonds ]
+; i  j  funct length
+1     2    1    0.34    5000 ;N1-CN Scaled for SASA
+2     3    1    0.34    5000 ;CN-GL1 Scaled for SASA
+2     4    1    0.37    5000 ;CN-GL2
+3     4    1    0.34    5000 ;GL1-GL2 Scaled for SASA
+3     5    1    0.34    5000 ;GL1-CX Scaled for SASA
+4     5    1    0.47    5000 ;GL2-CX
+5     6    1    0.47    5000 ;CX-C1A
+5     7    1    0.47    5000 ;CX-C1B Scaled for SASA
+
+[ angles ]
+;  i  j  k   funct   angle   force.c.
+1    2    3    2    160    40 ;N1-CN-GL1
+1    2    4    2    150    40 ;N1-CN-GL2
+3    5    6    2    130    15 ;GL1-CX-C1A
+4    5    7    2    130    15 ;GL2-CX-C1B
+6    5    7    2    145    25 ;C1A-CX-C1B
+2    4    5    2     85    50 ;CN-GL2-CX
+2    3    5    2    130    50 ;CN-GL1-CX
+
+
+[ exclusions ]
+6 7 ;C1A-C1B
+3 4 ;GL1-GL2
+
+[ pairs ]
+6 7 1 4.100000e-01    2.350000e+00
+
+[ moleculetype ]
+KP  1
+[ atoms ]
+; nr type resnr residue atom cgnr charge mass
+1    TQ2p  0    KP    N1    1    1    36
+2    TC2   0    KP    CN    2    0    36
+3    TN3r  0    KP    GL1   3    0    36
+4    TN3r  0    KP    GL2   4    0    36
+5    SC2   0    KP    CX    5    0    54
+6    C1    0    KP    C1A   6    0    72
+7    C1    0    KP    C1B   7    0    72
+
+[ bonds ]
+; i  j  funct length
+1    2    1    0.34    5000 ;N1-CN Scaled for SASA
+2    3    1    0.34    5000 ;CN-GL1 Scaled for SASA
+2    4    1    0.37    5000 ;CN-GL2
+3    4    1    0.34    5000 ;GL1-GL2 Scaled for SASA
+3    5    1    0.34    5000 ;GL1-CX
+4    5    1    0.47    5000 ;GL2-CX
+5    6    1    0.47    5000 ;CX-C1A Scaled for SASA
+5    7    1    0.47    5000 ;CX-C1B
+
+
+[ angles ]
+;  i  j  k   funct   angle   force.c.
+1    2    3    2    160    40 ;N1-CN-GL1
+1    2    4    2    150    40 ;N1-CN-GL2
+3    5    6    2    130    25 ;GL1-CX-C1A
+4    5    7    2    130    25 ;GL2-CX-C1B
+6    5    7    2    145    15 ;C1A-CX-C1B
+2    4    5    2     90    40 ;CN-GL2-CX
+2    3    5    2    130    55 ;CN-GL1-CX
+
+[ exclusions ]
+6 7 ;C1A-C1B
+3 4 ;GL1-GL2
+
+[ pairs ]
+6 7 1 4.100000e-01    2.350000e+00
+

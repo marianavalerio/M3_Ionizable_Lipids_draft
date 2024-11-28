@@ -1,0 +1,68 @@
+[ moleculetype ]
+TN   1
+[ atoms ]
+; nr type resnr residue atom cgnr charge mass
+1    SN3a    0    TN     Na    1    0    54
+2    TC3     0    TN     Ta    2    0    36
+3    SN3a    0    TN     N1    3    0    54
+4    TC3     0    TN     Tb    4    0    36
+5    SN3a    0    TN     Nb    5    0    54
+
+[ bonds ]
+; i  j  funct length
+1    2    1    0.37    5000 ;Na-Ta
+2    3    1    0.37    5000 ;Ta-N1
+3    4    1    0.37    5000 ;N1-Tb
+4    5    1    0.37    5000 ;Tb-Nb
+
+[ angles ]
+;  i  j  k   funct   angle   force.c.
+1    2    3    2    160    95 ;Na-Ta-N1
+2    3    4    2    120    10 ;Ta-N1-Tb
+3    4    5    2    160    95 ;N1-Tb-Nb
+
+[ moleculetype ]
+TP1  1
+[ atoms ]
+; nr type resnr residue atom cgnr charge mass
+1    SN3a    0    TP1    Na    1    0    54
+2    TC3     0    TP1    Ta    2    0    36
+3    SQ2p    0    TP1    N1    3    1    54
+4    TC3     0    TP1    Tb    4    0    36
+5    SN3a    0    TP1    Nb    5    0    54
+
+[ bonds ]
+; i  j  funct length
+1    2    1    0.37    5000 ;Na-Ta
+2    3    1    0.37    5000 ;Ta-N1
+3    4    1    0.37    5000 ;N1-Tb
+4    5    1    0.37    5000 ;Tb-Nb
+
+[ angles ]
+;  i  j  k   funct   angle   force.c.
+1    2    3    2    160    95 ;Na-Ta-N1
+2    3    4    2    120    10 ;Ta-N1-Tb
+3    4    5    2    160    95 ;N1-Tb-Nb
+
+[ moleculetype ]
+TP2  1
+[ atoms ]
+; nr type resnr residue atom cgnr charge mass
+1    SQ2p    0    TP2    Na    1    1    54
+2    TC3     0    TP2    Ta    2    0    36
+3    SN3a    0    TP2    N1    3    0    54
+4    TC3     0    TP2    Tb    4    0    36
+5    SN3a    0    TP2    Nb    5    0    54
+
+[ bonds ]
+; i  j  funct length
+1    2    1    0.37    5000 ;Na-Ta
+2    3    1    0.37    5000 ;Ta-N1
+3    4    1    0.37    5000 ;N1-Tb
+4    5    1    0.37    5000 ;Tb-Nb
+
+[ angles ]
+;  i  j  k   funct   angle   force.c.
+1    2    3    2    160    95 ;Na-Ta-N1
+2    3    4    2    120    10 ;Ta-N1-Tb
+3    4    5    2    160    95 ;N1-Tb-Nb
