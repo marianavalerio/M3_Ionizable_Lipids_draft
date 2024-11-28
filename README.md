@@ -1,4 +1,6 @@
-# Here you find ionizable lipid parameters for the Martini 3 Force Field along with useful protocols for studying Lipid Nanoparticles (LNPs)
+# Martini 3 building blocks for Lipid Nanoparticle design
+
+Here you find ionizable lipid parameters for the Martini 3 Force Field along with useful protocols for studying Lipid Nanoparticles (LNPs)
 
 If you use the parameters or protocols please cite the paper:
 10.26434/chemrxiv-2024-bf4n8
