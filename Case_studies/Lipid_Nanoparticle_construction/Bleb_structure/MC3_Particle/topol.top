@@ -1,1 +1,17 @@
+#include "ITP/martini_v3.0.0.itp"
+#include "ITP/martini_v3.0_ffbonded.itp"
+#include "ITP/1000_RNA.itp"
+#include "ITP/martini_v3.0.0_phospholipids_v1.itp"
+#include "ITP/MC3_KC2_DP_DT_LI5_LI2_LI10_BMHB.itp"
+#include "ITP/martini_v3.0_sterols_v1.0.itp"
+#include "ITP/martini_v3.0.0_solvents_v1.itp"
+#include "ITP/martini_v3.0.0_ions_v1.itp"
+[ system ]
+LNP
 
+[ molecules ]
+#include "coat_solv_mol_counting.top"
+WN          7714148
+NA               20984
+CL               20984
+CL               8094
