@@ -238,21 +238,6 @@ lipidsa.update({        # 1    2    3    4    5    6    7    8    9   10   11   
 })
 
 
-# # Sterols
-# moltype = "sterol"
-# lipidsx[moltype] = (       0,  0,  1,  0, 1,  0,  0.5,0.5,0,  0,0.5,  0,0.5,  0)
-# lipidsy[moltype] = (       0,  0,  0,  0, 0,  0,  0,  0,  0,  0, 0,   0,  0,  0)
-# lipidsz[moltype] = (     5.3,4.5,3.9,3.3, 3 ,2.6, 4.5,2.6,1.4,0, 0, 5.9,6.3,  0)
-# lipidsa.update({
-#     "CHOL": (moltype, " ROH  R1  R2  R3  R4  R5  R6  R7  C1  C2  -   -   -   - "),
-#      "ERG": (moltype, " ROH  R1  R2  R3  R4  R5  R6  R7  C1  C2 C3   -   -   - "),
-    
-#     "SITO": (moltype, " ROH  R1  R2  R3  R4  R5  R6  R7  C1  C2 C3   -   -   - "),
-#     "STIG": (moltype, " ROH  R1  R2  R3  R4  R5  R6  R7  C1  C2 C3   -   -   - "),
-#     "CAMP": (moltype, " ROH  R1  R2  R3  R4  R5  R6  R7  C1  C2 C3   -   -   - "),
-#     "CHSP": (moltype, "  R0  R1  R2  R3  R4  R5  R6  R7  C1  C2  -  O1  O2   - "),
-# })
-
 
 lipidsx[moltype] = (     0,  0,  0,  0,  0, 0,   0,  1,  0,  0,  1,  0, 0.5,0.5, 0,  0,  0,  0,0.5,  0,   0)
 lipidsy[moltype] = (     0,  0,  0,  0,  0, 0,   0,  0,  0,  0,  0,  0,  0,  0,  0,  0,0.5,  0,  0,  0,  0.5)
@@ -263,8 +248,6 @@ lipidsa.update({
     "SITO": (moltype, " -   -   -   -   -   -  ROH  R1  R2  R3  R4   -  R5  R6  C1  C2 C3   -   -   -  - "),
     "STIG": (moltype, " -   -   -   -   -   -  ROH  R1  R2  R3  R4   -  R5  R6  C1  C2 C3   -   -   -  - "),
     "CAMP": (moltype, " -   -   -   -   -   -  ROH  R1  R2  R3  R4   -  R5  R6  C1  C2 C3   -   -   -  - "),
-    "CHSP": (moltype, " -   -   -   -   -   -   R0  R1  R2  R3  R4   -  R5  R6  C1  C2  -  O1  O2   -  - "),
-    # "GSITO": (moltype, " -   -   -   -   -   -   R0  R1  R2  R3  R4   -  R5  R6  C1  C2 C3  S1  S2  S3 S4 "),
 })
 
 lipidsx[moltype] = (        0,  1,  0,  0,  1,  0, 0.5,0.5, 0,  0,  0,  0,0.5,  0,   0, 0, 0, 0, 0,0)
