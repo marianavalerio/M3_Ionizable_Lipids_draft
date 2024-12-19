@@ -8,11 +8,17 @@ Welcome to the repository for **Martini 3 ionizable lipid parameters and protoco
 This repository provides:
 
 1. **Ionizable Lipid Parameters:**  
-   - Access the `Lipid_parameters` folder for ready-to-use Martini 3 parameters for canonical Ionizable Lipids and fragments.  
-   - Detailed descriptions and tips for integration into GROMACS simulations are provided.  
+- Access the `Lipid_parameters` folder for ready-to-use Martini 3 parameters for:
+   - Literature known Ionizable Lipids - `Lipid_parameters`;
+   - Built Ionizable Lipids - `Lipid_parameters > Ionizable_lipid_library`;
+   - Ionizable Lipid Fragments - `Lipid_parameters > `.  
+- Detailed descriptions on how to generate new lipid itps are provided in `Lipid_parameters > Scripts`.  
 
 2. **Case Studies and Protocols:**  
-   - Explore the `Case_studies` folder to obtain the protocols and examples that guide you through simulating and analyzing LNP systems.
+- Explore the `Case_studies` folder to obtain the protocols that guide you through:
+   - Building Lipid Nanoparticles - `Case_studies > Lipid_Nanoparticle_construction`
+   - Quantifying stalk formation - `Case_studies > Quantifying_stalk_formation-endosomal`
+   - Simulating Unbiased Fusion - `Case_studies > Unbiased_Fusion`   
        
 
 ## Citation
