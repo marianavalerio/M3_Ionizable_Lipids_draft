@@ -1,6 +1,6 @@
 ## Fusion assays
 
-Bilayer fusion assays between LNP membranes with different ionizable lipids and a target plasma membrane were performed using the method described in [Poojari et al](https://www.nature.com/articles/s41467-021-26924-2).  
+Bilayer fusion assays between LNP membranes with different ionizable lipids and a target plasma membrane were performed using the method described in [Poojari et al](https://www.nature.com/articles/s41467-021-26924-2), which can be obtained [here](https://gitlab.com/cbjh/gromacs-chain-coordinate).
 
 ## LNP composition
 
