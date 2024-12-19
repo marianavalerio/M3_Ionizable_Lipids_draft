@@ -1,6 +1,6 @@
 # Martini 3 Building Blocks for Lipid Nanoparticle Design
-
-![Lipid Nanoparticle Components](LNP_components.png)  
+ 
+<img src="LNP_components.png" alt="Lipid Nanoparticle Components" width="500" height="300">
 
 Welcome to the repository for **Martini 3 ionizable lipid parameters and protocols** tailored for the design and simulation of Lipid Nanoparticles (LNPs). These resources are designed to facilitate molecular dynamics simulations, enabling deeper insights into LNP formulation and function, particularly for pharmaceutical applications such as mRNA delivery.
 
