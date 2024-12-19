@@ -50,4 +50,4 @@ gmx grompp -f MDPs/min_vac.mdp -c coated_test.gro -p hexagon_coat.top -o hexagon
 Step 7 + 7.5): Solvate and neutralize using the notebooks Step7_Solvate.ipynb and Step7.5_create_top_hexagon.ipynb 
 
 
-NB : for these notebook you will need the legacy version of MDvwhole
+NB : for these notebook you will need the legacy version of MDVcontainment 
