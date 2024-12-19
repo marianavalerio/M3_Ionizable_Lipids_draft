@@ -2,17 +2,18 @@
 
 Welcome to the repository for **Martini 3 ionizable lipid parameters and protocols** tailored for the design and simulation of Lipid Nanoparticles (LNPs). These resources are designed to facilitate molecular dynamics simulations, enabling deeper insights into LNP formulation and function, particularly for pharmaceutical applications such as mRNA delivery.
 
-![Lipid Nanoparticle Components](Fragment_approach.png)  
+![Lipid Nanoparticle Components](LNP_components.png)  
 
 ## What’s Included
 This repository provides:
 
 1. **Ionizable Lipid Parameters:**  
-   - Access the `Lipid_parameters` folder for ready-to-use Martini 3 parameters.  
+   - Access the `Lipid_parameters` folder for ready-to-use Martini 3 Ionizable Lipid parameters and fragments.  
    - Detailed descriptions and tips for integration into GROMACS simulations are provided.  
 
 2. **Case Studies and Protocols:**  
-   - Explore the `Case_studies` folder for protocols and examples that guide you through simulating and analyzing LNP systems.  
+   - Explore the `Case_studies` folder to obtain the protocols and examples that guide you through simulating and analyzing LNP systems.
+       
 
 ## Citation
 If you use the parameters or protocols from this repository, please cite the following publication:  
