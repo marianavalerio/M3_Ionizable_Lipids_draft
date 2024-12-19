@@ -8,5 +8,5 @@ Input files for the three LNPs simulated in the paper can also be found in this 
 
 #### Notebooks for constructing a 'Bleb' like LNP.
 Note that this is a showcase protocol optimized to run Molecular Dynamics on the resulting structure.
-<img src="Bleb_structure.png" alt="Bleb Structure" width="300" height="200">
+<img src="Bleb_structure.png" alt="Bleb Structure" width="300" height="400">
 
