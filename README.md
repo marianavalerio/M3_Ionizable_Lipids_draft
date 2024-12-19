@@ -8,7 +8,7 @@ Welcome to the repository for **Martini 3 ionizable lipid parameters and protoco
 This repository provides:
 
 1. **Ionizable Lipid Parameters:**  
-   - Access the `Lipid_parameters` folder for ready-to-use Martini 3 Ionizable Lipid parameters and fragments.  
+   - Access the `Lipid_parameters` folder for ready-to-use Martini 3 parameters for canonical Ionizable Lipids and fragments.  
    - Detailed descriptions and tips for integration into GROMACS simulations are provided.  
 
 2. **Case Studies and Protocols:**  
