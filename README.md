@@ -21,6 +21,13 @@ This repository provides:
       - Simulating Unbiased Fusion - `Case_studies > Unbiased_Fusion`   
        
 
-## Citation
-If you use the parameters or protocols from this repository, please cite the following publication:  
+## Citations
+If you use the parameters from this repository, please cite the following publication:  
 [Kjølbye, L. R., Valério, M., Paloncýová, M., Borges-Araújo, L., Pestana-Nobles, R., Grünewald, F., ... & Souza, P. C. (2024). Martini 3 building blocks for Lipid Nanoparticle design.](https://doi.org/10.26434/chemrxiv-2024-bf4n8)
+
+ If you use the protocols from this repository, please cite the following publication: 
+| Protocol                             | Powered by                                                                               
+|--------------------------------------|------------------------------------------------------------------
+| Inverse Hexagonal core LNP  | [MDAnalysis](https://www.mdanalysis.org/); [Packmol](https://m3g.github.io/packmol/); [TS2CG](https://github.com/marrink-lab/TS2CG); [freud](https://freud.readthedocs.io/en/stable/gettingstarted/introduction.html); [mdvwhole](https://github.com/BartBruininks/mdvwhole); [mdvcontainment](https://github.com/BartBruininks/mdvcontainment/releases/tag/legacy)
+| "Bleb" LNP                  | [MDAnalysis](https://www.mdanalysis.org/); [Packmol](https://m3g.github.io/packmol/); [TS2CG](https://github.com/marrink-lab/TS2CG); [freud](https://freud.readthedocs.io/en/stable/gettingstarted/introduction.html); [mdvwhole](https://github.com/BartBruininks/mdvwhole)
+| Stalk Free Energy           | [Gromacs-chain-coordinate](https://gitlab.com/cbjh/gromacs-chain-coordinate); [insane.py](https://github.com/Tsjerk/Insane); [GROMACS]([https://github.com/BartBruininks/mdvwhole](https://manual.gromacs.org/2024.1/install-guide/index.html))
