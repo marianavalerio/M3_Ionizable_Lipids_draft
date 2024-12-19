@@ -1,12 +1,19 @@
-# Martini 3 building blocks for Lipid Nanoparticle design
+# Martini 3 Building Blocks for Lipid Nanoparticle Design
 
-Here you find ionizable lipid parameters for the Martini 3 Force Field along with useful protocols for studying Lipid Nanoparticles (LNPs)
+Welcome to the repository for **Martini 3 ionizable lipid parameters and protocols** tailored for the design and simulation of Lipid Nanoparticles (LNPs). These resources are designed to facilitate molecular dynamics simulations, enabling deeper insights into LNP formulation and function, particularly for pharmaceutical applications such as mRNA delivery.
 
-If you use the parameters or protocols please cite the paper:
+![Lipid Nanoparticle Components](Fragment_approach.png)  
+
+## What’s Included
+This repository provides:
+
+1. **Ionizable Lipid Parameters:**  
+   - Access the `Lipid_parameters` folder for ready-to-use Martini 3 parameters.  
+   - Detailed descriptions and tips for integration into GROMACS simulations are provided.  
+
+2. **Case Studies and Protocols:**  
+   - Explore the `Case_studies` folder for protocols and examples that guide you through simulating and analyzing LNP systems.  
+
+## Citation
+If you use the parameters or protocols from this repository, please cite the following publication:  
 [Kjølbye, L. R., Valério, M., Paloncýová, M., Borges-Araújo, L., Pestana-Nobles, R., Grünewald, F., ... & Souza, P. C. (2024). Martini 3 building blocks for Lipid Nanoparticle design.](https://doi.org/10.26434/chemrxiv-2024-bf4n8)
-
-
-> For parameters look in the Lipid_parameters folder
-
-
-> For protocols look in the Case_studies folder
