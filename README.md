@@ -22,10 +22,10 @@ This repository provides:
        
 
 ## Citations
-If you use the parameters from this repository, please cite the following publication:  
+If you use the parameters/protocols from this repository, please cite the following publication:  
 [Kjølbye, L. R., Valério, M., Paloncýová, M., Borges-Araújo, L., Pestana-Nobles, R., Grünewald, F., ... & Souza, P. C. (2024). Martini 3 building blocks for Lipid Nanoparticle design.](https://doi.org/10.26434/chemrxiv-2024-bf4n8)
 
- If you use the protocols from this repository, please cite the following publication: 
+Please also cite the following packages/publications: 
 | Protocol                             | Powered by                                                                               
 |--------------------------------------|------------------------------------------------------------------
 | Inverse Hexagonal core LNP  | [MDAnalysis](https://www.mdanalysis.org/); [Packmol](https://m3g.github.io/packmol/); [TS2CG](https://github.com/marrink-lab/TS2CG); [freud](https://freud.readthedocs.io/en/stable/gettingstarted/introduction.html); [mdvwhole](https://github.com/BartBruininks/mdvwhole); [mdvcontainment](https://github.com/BartBruininks/mdvcontainment/releases/tag/legacy)
