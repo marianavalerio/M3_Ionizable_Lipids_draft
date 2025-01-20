@@ -4,7 +4,7 @@ Here in you find useful **_notebooks_** for constructing systems studied in the 
 
 #### Notebooks used for setting up an LNP with an inverse hexagonal core. 
 Input files for the three LNPs simulated in the paper can also be found in this folder.
-<img src="inverse_hexagonal_core.png" alt="Inverse Hexagonal Core" width="300" height="200">
+<img src="inverse_hexagonal_core.png" alt="Inverse Hexagonal Core" height="200">
 
 #### Notebooks for constructing a 'Bleb' like LNP.
 Note that this is a showcase protocol optimized to run Molecular Dynamics on the resulting structure.
