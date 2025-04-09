@@ -127,8 +127,8 @@ DMG 1
  4  5  6 2 180 35
  3  7  8 2 180 35
  7  8  9 2 180 35
- 9  1  2 2 110 25 ; PEO-NO-GLA Added manually
- 9  1  3 2 125 15 ; PEO-NO-GLB Added manually
+10  1  2 2 110 25 ; PEO-NO-GLA Added manually
+10  1  3 2 125 15 ; PEO-NO-GLB Added manually
 53 54 55 2 127.00 110.0 ; central-angle
 10 11 12 2 123.00 80 ; central-angle
 11 12 13 2 123.00 80 ; central-angle
