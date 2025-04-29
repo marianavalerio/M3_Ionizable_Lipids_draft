@@ -5,4 +5,4 @@ To Run the LNP Building Scripts you will need to install the following programs:
 - [TS2CG](https://github.com/marrink-lab/TS2CG);
 - [freud](https://freud.readthedocs.io/en/stable/gettingstarted/introduction.html);
 - [mdvwhole](https://github.com/BartBruininks/mdvwhole);
-- [mdvcontainment](https://github.com/BartBruininks/mdvcontainment/releases/tag/legacy).
+- [mdvcontainment (legacy)](https://github.com/BartBruininks/mdvcontainment/releases/tag/legacy).
