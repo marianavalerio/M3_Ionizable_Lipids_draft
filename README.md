@@ -11,7 +11,8 @@ This repository provides:
    - Access the `Lipid_parameters` folder for ready-to-use Martini 3 parameters for:
       - Literature known Ionizable Lipids - `Lipid_parameters > Literature_known_lipids`;
       - Pre-built Ionizable Lipids - `Lipid_parameters > Ionizable_lipid_library`;
-      - Ionizable Lipid Fragments - `Lipid_parameters > Fragments`.  
+      - Ionizable Lipid Fragments - `Lipid_parameters > Fragments`.
+      - Lipid parameters adapted according to [Pedersen et.al](https://doi.org/10.26434/chemrxiv-2024-8bjrr) - `Lipid_parameters > Refined_tail_Parameters`
    - Detailed descriptions on how to generate new lipid itps are provided in `Lipid_parameters > Scripts`.  
 
 2. **Case Studies and Protocols:**  
