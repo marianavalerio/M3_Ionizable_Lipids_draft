@@ -21,6 +21,7 @@ Lipid_parameters
 |   └── DLDAP
 |   └── DLDAPH
 |   └── ...
+└── Refined_tail_Parameters [Lipid tail parameters adapted according to [Pedersen et.al](https://doi.org/10.26434/chemrxiv-2024-8bjrr)]
 └── Scripts [Handy scripts and insane version used in the article]
 └── Sterols [Natural sterol parameters]
     └── TMs

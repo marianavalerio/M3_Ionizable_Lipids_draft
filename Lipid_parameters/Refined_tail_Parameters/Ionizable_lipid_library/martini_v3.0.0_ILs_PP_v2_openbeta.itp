@@ -1,0 +1,1111 @@
+;
+; Piperizine head group with one ester as linker
+; Collection of Ionizable Martini 3 lipids with a Piperizine head group
+;
+; Please cite:
+; L. Kjølbye et al. Ionizable Lipids, TBD and K.B. Pedersen et al.  TBD Martini 3 lipids TBD and P.C.T. Souza et al. Martini 3: a general purpose force field for coarse-grained molecular dynamics, 
+;   Nat. Methods; 2021. doi: 10.1038/s41592-021-01098-3
+;
+; Last updated:  20-Mar-2025 by Mariana Valerio;
+; Authors: Lisbeth Ravnkilde & Mariana Valerio
+
+
+
+;;;;;; Martini lipid topology for di-C14:0, generated using:
+; The Martini lipid itp generator version M3.l01  Args are: -alname DMPP -alhead 'PP' -altail 'CCC CCC'
+; WARNING: Lipids topology was generated following the Martini 3.0 guidelines but not all lipid head group and tail combinations
+;          have been tested; used with care and see <M3lipid main ref> for guidance.
+;
+; Description:
+;   Piperizine head +2 charge
+; Parameterization:
+;   This topology follows the standard Martini 3.0 lipid definitions and building block rules.
+; Reference(s): 
+;   L. Kjølbye et al. Ionizable Lipids, TBD and K.B. Pedersen et al.  TBD Martini 3 lipids TBD and P.C.T. Souza et al. Martini 3: a general purpose force field for coarse-grained molecular dynamics, 
+;   Nat. Methods; 2021. doi: 10.1038/s41592-021-01098-3
+; Created: 2025.03.20
+;
+; Molecular topology and mapping of indices:
+;@INSANE alhead=PP, altail=CCC CCC, alname=DMPP, charge=2.0
+;@RESNTEST DMP==DMPP if: atoms[0]==NP1 
+;@BEADS NP1 NP2 CN GLA CX C1A C2A C3A C1B C2B C3B 
+;@BONDS NP1-NP2 NP2-CN CN-GLA GLA-CX CX-C1A CX-C1B C1A-C2A C2A-C3A C1B-C2B C2B-C3B 
+;
+
+[moleculetype]
+; molname      nrexcl
+  DMPP          1
+
+[atoms]
+; id 	type 	resnr 	residu 	atom 	cgnr 	charge    (mass)
+   1    Q2p   1  DMPP  NP1    1 	1
+   2  Q2p     1  DMPP  NP2    2 	1
+   3   C3     1  DMPP   CN   3 	0
+   4   SN4a   1  DMPP  GLA   4 	0
+   5   C2     1  DMPP   CX   5 	0
+   6     C1   1  DMPP  C1A   6 	0
+   7     C1   1  DMPP  C2A   7 	0
+   8     C1   1  DMPP  C3A   8 	0
+   9     C1   1  DMPP  C1B   9 	0
+  10     C1   1  DMPP  C2B  10 	0
+  11     C1   1  DMPP  C3B  11 	0
+
+[bonds]
+;  i  j 	name 	(using named bondtypes from martini_v3.0.0_ffbonded_v2.itp)
+;  i  j 	funct 	force.c.
+; Headgroup and linker bonds
+   1  2   1 	0.37 	2500 	; NP1-NP2
+   2  3   1 	0.45 	2500 	; NP2-CN
+   3  4   1 	0.45 	2500 	; CN-GLA
+   4  5   1 	0.37 	5000 	; GLA-CX
+   5  6   1 	0.47 	5000 	; CX-C1A
+   5  9   1 	0.47 	5000 	; CX-C1B
+; Lipid tail (uses standard Martini tail rules)
+   6  7 	b_C1_C1_mid
+   7  8 	b_C1_C1_end
+   9 10 	b_C1_C1_mid
+  10 11 	b_C1_C1_end
+
+[angles]
+;  i  j  k 	name 	(using named angletypes from martini_v3.0.0_ffbonded_v2.itp)
+;  i  j  k 	funct 	angle 	force.c.
+; Orient the headgroup and linker
+   1  2  3   2 	150 	35 	; N1-N2-CN
+   3  4  5   2 	120 	35 	; CN-GLA-CX
+   4  5  9   2 	100 	25 	; GLA-CX-C1B
+   4  5  6   2 	100 	25 	; GLA-CX-C1A
+; Tail part (uses standard Martini tail rules)
+   5  6  7   2 	155 	25 	; CX-C1A-C2A
+   5  9 10   1 	155 	25 	; CX-C1B-C2B
+   6  7  8 	a_C1_C1_C1_def
+   9 10 11 	a_C1_C1_C1_def
+
+[exclusions]
+; i  j  k  ...
+6 9
+[ pairs ]
+6 9 1 4.100000e-01    2.350000e+00
+
+
+
+;;;;;; Martini lipid topology for di-C18:0, generated using:
+; The Martini lipid itp generator version M3.l01  Args are: -alname DSPP -alhead 'PP' -altail 'CCCC CCCC'
+; WARNING: Lipids topology was generated following the Martini 3.0 guidelines but not all lipid head group and tail combinations
+;          have been tested; used with care and see <M3lipid main ref> for guidance.
+;
+; Description:
+;   Piperizine head +2 charge
+; Parameterization:
+;   This topology follows the standard Martini 3.0 lipid definitions and building block rules.
+; Reference(s): 
+;   L. Kjølbye et al. Ionizable Lipids, TBD and K.B. Pedersen et al.  TBD Martini 3 lipids TBD and P.C.T. Souza et al. Martini 3: a general purpose force field for coarse-grained molecular dynamics, 
+;   Nat. Methods; 2021. doi: 10.1038/s41592-021-01098-4
+; Created: 2025.03.20
+;
+; Molecular topology and mapping of indices:
+;@INSANE alhead=PP, altail=CCCC CCCC, alname=DSPP, charge=2.0
+;@RESNTEST DSP==DSPP if: atoms[0]==NP1 
+;@BEADS NP1 NP2 CN GLA CX C1A C2A C3A C4A C1B C2B C3B C4B 
+;@BONDS NP1-NP2 NP2-CN CN-GLA GLA-CX CX-C1A CX-C1B C1A-C2A C2A-C3A C3A-C4A C1B-C2B C2B-C3B C3B-C4B 
+;
+
+[moleculetype]
+; molname      nrexcl
+  DSPP          1
+
+[atoms]
+; id 	type 	resnr 	residu 	atom 	cgnr 	charge    (mass)
+   1    Q2p   1  DSPP  NP1    1 	1
+   2  Q2p     1  DSPP  NP2    2 	1
+   3   C3     1  DSPP   CN   3 	0
+   4   SN4a   1  DSPP  GLA   4 	0
+   5   C2     1  DSPP   CX   5 	0
+   6     C1   1  DSPP  C1A   6 	0
+   7     C1   1  DSPP  C2A   7 	0
+   8     C1   1  DSPP  C3A   8 	0
+   9     C1   1  DSPP  C4A   9 	0
+  10     C1   1  DSPP  C1B  10 	0
+  11     C1   1  DSPP  C2B  11 	0
+  12     C1   1  DSPP  C3B  12 	0
+  13     C1   1  DSPP  C4B  13 	0
+
+[bonds]
+;  i  j 	name 	(using named bondtypes from martini_v3.0.0_ffbonded_v2.itp)
+;  i  j 	funct 	force.c.
+; Headgroup and linker bonds
+   1  2   1 	0.37 	2500 	; NP1-NP2
+   2  3   1 	0.45 	2500 	; NP2-CN
+   3  4   1 	0.45 	2500 	; CN-GLA
+   4  5   1 	0.37 	5000 	; GLA-CX
+   5  6   1 	0.47 	5000 	; CX-C1A
+   5 10   1 	0.47 	5000 	; CX-C1B
+; Lipid tail (uses standard Martini tail rules)
+   6  7 	b_C1_C1_mid
+   7  8 	b_C1_C1_mid
+   8  9 	b_C1_C1_end
+  10 11 	b_C1_C1_mid
+  11 12 	b_C1_C1_mid
+  12 13 	b_C1_C1_end
+
+[angles]
+;  i  j  k 	name 	(using named angletypes from martini_v3.0.0_ffbonded_v2.itp)
+;  i  j  k 	funct 	angle 	force.c.
+; Orient the headgroup and linker
+   1  2  3   2 	150 	35 	; N1-N2-CN
+   3  4  5   2 	120 	35 	; CN-GLA-CX
+   4  5 10   2 	100 	25 	; GLA-CX-C1B
+   4  5  6   2 	100 	25 	; GLA-CX-C1A
+; Tail part (uses standard Martini tail rules)
+   5  6  7   2 	155 	25 	; CX-C1A-C2A
+   5 10 11   1 	155 	25 	; CX-C1B-C2B
+   6  7  8 	a_C1_C1_C1_def
+   7  8  9 	a_C1_C1_C1_def
+  10 11 12 	a_C1_C1_C1_def
+  11 12 13 	a_C1_C1_C1_def
+
+[exclusions]
+; i  j  k  ...
+6 10
+[ pairs ]
+6 10 1 4.100000e-01    2.350000e+00
+
+
+
+;;;;;; Martini lipid topology for di-C22:0, generated using:
+; The Martini lipid itp generator version M3.l01  Args are: -alname DBPP -alhead 'PP' -altail 'CCCCC CCCCC'
+; WARNING: Lipids topology was generated following the Martini 3.0 guidelines but not all lipid head group and tail combinations
+;          have been tested; used with care and see <M3lipid main ref> for guidance.
+;
+; Description:
+;   Piperizine head +2 charge
+; Parameterization:
+;   This topology follows the standard Martini 3.0 lipid definitions and building block rules.
+; Reference(s): 
+;   L. Kjølbye et al. Ionizable Lipids, TBD and K.B. Pedersen et al.  TBD Martini 3 lipids TBD and P.C.T. Souza et al. Martini 3: a general purpose force field for coarse-grained molecular dynamics, 
+;   Nat. Methods; 2021. doi: 10.1038/s41592-021-01098-5
+; Created: 2025.03.20
+;
+; Molecular topology and mapping of indices:
+;@INSANE alhead=PP, altail=CCCCC CCCCC, alname=DBPP, charge=2.0
+;@RESNTEST DBP==DBPP if: atoms[0]==NP1 
+;@BEADS NP1 NP2 CN GLA CX C1A C2A C3A C4A C5A C1B C2B C3B C4B C5B 
+;@BONDS NP1-NP2 NP2-CN CN-GLA GLA-CX CX-C1A CX-C1B C1A-C2A C2A-C3A C3A-C4A C4A-C5A C1B-C2B C2B-C3B C3B-C4B C4B-C5B 
+;
+
+[moleculetype]
+; molname      nrexcl
+  DBPP          1
+
+[atoms]
+; id 	type 	resnr 	residu 	atom 	cgnr 	charge    (mass)
+   1    Q2p   1  DBPP  NP1    1 	1
+   2  Q2p     1  DBPP  NP2    2 	1
+   3   C3     1  DBPP   CN   3 	0
+   4   SN4a   1  DBPP  GLA   4 	0
+   5   C2     1  DBPP   CX   5 	0
+   6     C1   1  DBPP  C1A   6 	0
+   7     C1   1  DBPP  C2A   7 	0
+   8     C1   1  DBPP  C3A   8 	0
+   9     C1   1  DBPP  C4A   9 	0
+  10     C1   1  DBPP  C5A  10 	0
+  11     C1   1  DBPP  C1B  11 	0
+  12     C1   1  DBPP  C2B  12 	0
+  13     C1   1  DBPP  C3B  13 	0
+  14     C1   1  DBPP  C4B  14 	0
+  15     C1   1  DBPP  C5B  15 	0
+
+[bonds]
+;  i  j 	name 	(using named bondtypes from martini_v3.0.0_ffbonded_v2.itp)
+;  i  j 	funct 	force.c.
+; Headgroup and linker bonds
+   1  2   1 	0.37 	2500 	; NP1-NP2
+   2  3   1 	0.45 	2500 	; NP2-CN
+   3  4   1 	0.45 	2500 	; CN-GLA
+   4  5   1 	0.37 	5000 	; GLA-CX
+   5  6   1 	0.47 	5000 	; CX-C1A
+   5 11   1 	0.47 	5000 	; CX-C1B
+; Lipid tail (uses standard Martini tail rules)
+   6  7 	b_C1_C1_mid
+   7  8 	b_C1_C1_mid
+   8  9 	b_C1_C1_mid
+   9 10 	b_C1_C1_end
+  11 12 	b_C1_C1_mid
+  12 13 	b_C1_C1_mid
+  13 14 	b_C1_C1_mid
+  14 15 	b_C1_C1_end
+
+[angles]
+;  i  j  k 	name 	(using named angletypes from martini_v3.0.0_ffbonded_v2.itp)
+;  i  j  k 	funct 	angle 	force.c.
+; Orient the headgroup and linker
+   1  2  3   2 	150 	35 	; N1-N2-CN
+   3  4  5   2 	120 	35 	; CN-GLA-CX
+   4  5 11   2 	100 	25 	; GLA-CX-C1B
+   4  5  6   2 	100 	25 	; GLA-CX-C1A
+; Tail part (uses standard Martini tail rules)
+   5  6  7   2 	155 	25 	; CX-C1A-C2A
+   5 11 12   1 	155 	25 	; CX-C1B-C2B
+   6  7  8 	a_C1_C1_C1_def
+   7  8  9 	a_C1_C1_C1_def
+   8  9 10 	a_C1_C1_C1_def
+  11 12 13 	a_C1_C1_C1_def
+  12 13 14 	a_C1_C1_C1_def
+  13 14 15 	a_C1_C1_C1_def
+
+[exclusions]
+; i  j  k  ...
+6 11
+[ pairs ]
+6 11 1 4.100000e-01    2.350000e+00
+
+
+
+;;;;;; Martini lipid topology for di-C18:1, generated using:
+; The Martini lipid itp generator version M3.l01  Args are: -alname DOPP -alhead 'PP' -altail 'CDCC CDCC'
+; WARNING: Lipids topology was generated following the Martini 3.0 guidelines but not all lipid head group and tail combinations
+;          have been tested; used with care and see <M3lipid main ref> for guidance.
+;
+; Description:
+;   Piperizine head +2 charge
+; Parameterization:
+;   This topology follows the standard Martini 3.0 lipid definitions and building block rules.
+; Reference(s): 
+;   L. Kjølbye et al. Ionizable Lipids, TBD and K.B. Pedersen et al.  TBD Martini 3 lipids TBD and P.C.T. Souza et al. Martini 3: a general purpose force field for coarse-grained molecular dynamics, 
+;   Nat. Methods; 2021. doi: 10.1038/s41592-021-01098-6
+; Created: 2025.03.20
+;
+; Molecular topology and mapping of indices:
+;@INSANE alhead=PP, altail=CDCC CDCC, alname=DOPP, charge=2.0
+;@RESNTEST DOP==DOPP if: atoms[0]==NP1 
+;@BEADS NP1 NP2 CN GLA CX C1A D2A C3A C4A C1B D2B C3B C4B 
+;@BONDS NP1-NP2 NP2-CN CN-GLA GLA-CX CX-C1A CX-C1B C1A-D2A D2A-C3A C3A-C4A C1B-D2B D2B-C3B C3B-C4B 
+;
+
+[moleculetype]
+; molname      nrexcl
+  DOPP          1
+
+[atoms]
+; id 	type 	resnr 	residu 	atom 	cgnr 	charge    (mass)
+   1    Q2p   1  DOPP  NP1    1 	1
+   2  Q2p     1  DOPP  NP2    2 	1
+   3   C3     1  DOPP   CN   3 	0
+   4   SN4a   1  DOPP  GLA   4 	0
+   5   C2     1  DOPP   CX   5 	0
+   6     C1   1  DOPP  C1A   6 	0
+   7    C4h   1  DOPP  D2A   7 	0
+   8     C1   1  DOPP  C3A   8 	0
+   9     C1   1  DOPP  C4A   9 	0
+  10     C1   1  DOPP  C1B  10 	0
+  11    C4h   1  DOPP  D2B  11 	0
+  12     C1   1  DOPP  C3B  12 	0
+  13     C1   1  DOPP  C4B  13 	0
+
+[bonds]
+;  i  j 	name 	(using named bondtypes from martini_v3.0.0_ffbonded_v2.itp)
+;  i  j 	funct 	force.c.
+; Headgroup and linker bonds
+   1  2   1 	0.37 	2500 	; NP1-NP2
+   2  3   1 	0.45 	2500 	; NP2-CN
+   3  4   1 	0.45 	2500 	; CN-GLA
+   4  5   1 	0.37 	5000 	; GLA-CX
+   5  6   1 	0.47 	5000 	; CX-C1A
+   5 10   1 	0.47 	5000 	; CX-C1B
+; Lipid tail (uses standard Martini tail rules)
+   6  7 	b_C1_C4_mid
+   7  8 	b_C4_C1_mid
+   8  9 	b_C1_C1_end
+  10 11 	b_C1_C4_mid
+  11 12 	b_C4_C1_mid
+  12 13 	b_C1_C1_end
+
+[angles]
+;  i  j  k 	name 	(using named angletypes from martini_v3.0.0_ffbonded_v2.itp)
+;  i  j  k 	funct 	angle 	force.c.
+; Orient the headgroup and linker
+   1  2  3   2 	150 	35 	; N1-N2-CN
+   3  4  5   2 	120 	35 	; CN-GLA-CX
+   4  5 10   2 	100 	25 	; GLA-CX-C1B
+   4  5  6   2 	100 	25 	; GLA-CX-C1A
+; Tail part (uses standard Martini tail rules)
+   5  6  7   2 	140 	15 	; CX-C1A-D2A
+   5 10 11   1 	140 	15 	; CX-C1B-D2B
+   6  7  8 	a_C1_C4_C1_def
+   7  8  9 	a_C4_C1_C1_def
+  10 11 12 	a_C1_C4_C1_def
+  11 12 13 	a_C4_C1_C1_def
+
+[exclusions]
+; i  j  k  ...
+6 10
+[ pairs ]
+6 10 1 4.100000e-01    2.350000e+00
+
+
+
+;;;;;; Martini lipid topology for di-C18:1, generated using:
+; The Martini lipid itp generator version M3.l01  Args are: -alname DVPP -alhead 'PP' -altail 'CCDC CCDC'
+; WARNING: Lipids topology was generated following the Martini 3.0 guidelines but not all lipid head group and tail combinations
+;          have been tested; used with care and see <M3lipid main ref> for guidance.
+;
+; Description:
+;   Piperizine head +2 charge
+; Parameterization:
+;   This topology follows the standard Martini 3.0 lipid definitions and building block rules.
+; Reference(s): 
+;   L. Kjølbye et al. Ionizable Lipids, TBD and K.B. Pedersen et al.  TBD Martini 3 lipids TBD and P.C.T. Souza et al. Martini 3: a general purpose force field for coarse-grained molecular dynamics, 
+;   Nat. Methods; 2021. doi: 10.1038/s41592-021-01098-7
+; Created: 2025.03.20
+;
+; Molecular topology and mapping of indices:
+;@INSANE alhead=PP, altail=CCDC CCDC, alname=DVPP, charge=2.0
+;@RESNTEST DVP==DVPP if: atoms[0]==NP1 
+;@BEADS NP1 NP2 CN GLA CX C1A C2A D3A C4A C1B C2B D3B C4B 
+;@BONDS NP1-NP2 NP2-CN CN-GLA GLA-CX CX-C1A CX-C1B C1A-C2A C2A-D3A D3A-C4A C1B-C2B C2B-D3B D3B-C4B 
+;
+
+[moleculetype]
+; molname      nrexcl
+  DVPP          1
+
+[atoms]
+; id 	type 	resnr 	residu 	atom 	cgnr 	charge    (mass)
+   1    Q2p   1  DVPP  NP1    1 	1
+   2  Q2p     1  DVPP  NP2    2 	1
+   3   C3     1  DVPP   CN   3 	0
+   4   SN4a   1  DVPP  GLA   4 	0
+   5   C2     1  DVPP   CX   5 	0
+   6     C1   1  DVPP  C1A   6 	0
+   7     C1   1  DVPP  C2A   7 	0
+   8    C4h   1  DVPP  D3A   8 	0
+   9     C1   1  DVPP  C4A   9 	0
+  10     C1   1  DVPP  C1B  10 	0
+  11     C1   1  DVPP  C2B  11 	0
+  12    C4h   1  DVPP  D3B  12 	0
+  13     C1   1  DVPP  C4B  13 	0
+
+[bonds]
+;  i  j 	name 	(using named bondtypes from martini_v3.0.0_ffbonded_v2.itp)
+;  i  j 	funct 	force.c.
+; Headgroup and linker bonds
+   1  2   1 	0.37 	2500 	; NP1-NP2
+   2  3   1 	0.45 	2500 	; NP2-CN
+   3  4   1 	0.45 	2500 	; CN-GLA
+   4  5   1 	0.37 	5000 	; GLA-CX
+   5  6   1 	0.47 	5000 	; CX-C1A
+   5 10   1 	0.47 	5000 	; CX-C1B
+; Lipid tail (uses standard Martini tail rules)
+   6  7 	b_C1_C1_mid
+   7  8 	b_C1_C4_mid
+   8  9 	b_C4_C1_end
+  10 11 	b_C1_C1_mid
+  11 12 	b_C1_C4_mid
+  12 13 	b_C4_C1_end
+
+[angles]
+;  i  j  k 	name 	(using named angletypes from martini_v3.0.0_ffbonded_v2.itp)
+;  i  j  k 	funct 	angle 	force.c.
+; Orient the headgroup and linker
+   1  2  3   2 	150 	35 	; N1-N2-CN
+   3  4  5   2 	120 	35 	; CN-GLA-CX
+   4  5 10   2 	100 	25 	; GLA-CX-C1B
+   4  5  6   2 	100 	25 	; GLA-CX-C1A
+; Tail part (uses standard Martini tail rules)
+   5  6  7   2 	155 	25 	; CX-C1A-C2A
+   5 10 11   1 	155 	25 	; CX-C1B-C2B
+   6  7  8 	a_C1_C1_C4_def
+   7  8  9 	a_C1_C4_C1_def
+  10 11 12 	a_C1_C1_C4_def
+  11 12 13 	a_C1_C4_C1_def
+
+[exclusions]
+; i  j  k  ...
+6 10
+[ pairs ]
+6 10 1 4.100000e-01    2.350000e+00
+
+
+
+;;;;;; Martini lipid topology for di-C18:2, generated using:
+; The Martini lipid itp generator version M3.l01  Args are: -alname DLPP -alhead 'PP' -altail 'CDDC CDDC'
+; WARNING: Lipids topology was generated following the Martini 3.0 guidelines but not all lipid head group and tail combinations
+;          have been tested; used with care and see <M3lipid main ref> for guidance.
+;
+; Description:
+;   Piperizine head +2 charge
+; Parameterization:
+;   This topology follows the standard Martini 3.0 lipid definitions and building block rules.
+; Reference(s): 
+;   L. Kjølbye et al. Ionizable Lipids, TBD and K.B. Pedersen et al.  TBD Martini 3 lipids TBD and P.C.T. Souza et al. Martini 3: a general purpose force field for coarse-grained molecular dynamics, 
+;   Nat. Methods; 2021. doi: 10.1038/s41592-021-01098-8
+; Created: 2025.03.20
+;
+; Molecular topology and mapping of indices:
+;@INSANE alhead=PP, altail=CDDC CDDC, alname=DLPP, charge=2.0
+;@RESNTEST DLP==DLPP if: atoms[0]==NP1 
+;@BEADS NP1 NP2 CN GLA CX C1A D2A D3A C4A C1B D2B D3B C4B 
+;@BONDS NP1-NP2 NP2-CN CN-GLA GLA-CX CX-C1A CX-C1B C1A-D2A D2A-D3A D3A-C4A C1B-D2B D2B-D3B D3B-C4B 
+;
+
+[moleculetype]
+; molname      nrexcl
+  DLPP          1
+
+[atoms]
+; id 	type 	resnr 	residu 	atom 	cgnr 	charge    (mass)
+   1    Q2p   1  DLPP  NP1    1 	1
+   2  Q2p     1  DLPP  NP2    2 	1
+   3   C3     1  DLPP   CN   3 	0
+   4   SN4a   1  DLPP  GLA   4 	0
+   5   C2     1  DLPP   CX   5 	0
+   6     C1   1  DLPP  C1A   6 	0
+   7    C4h   1  DLPP  D2A   7 	0
+   8    C4h   1  DLPP  D3A   8 	0
+   9     C1   1  DLPP  C4A   9 	0
+  10     C1   1  DLPP  C1B  10 	0
+  11    C4h   1  DLPP  D2B  11 	0
+  12    C4h   1  DLPP  D3B  12 	0
+  13     C1   1  DLPP  C4B  13 	0
+
+[bonds]
+;  i  j 	name 	(using named bondtypes from martini_v3.0.0_ffbonded_v2.itp)
+;  i  j 	funct 	force.c.
+; Headgroup and linker bonds
+   1  2   1 	0.37 	2500 	; NP1-NP2
+   2  3   1 	0.45 	2500 	; NP2-CN
+   3  4   1 	0.45 	2500 	; CN-GLA
+   4  5   1 	0.37 	5000 	; GLA-CX
+   5  6   1 	0.47 	5000 	; CX-C1A
+   5 10   1 	0.47 	5000 	; CX-C1B
+; Lipid tail (uses standard Martini tail rules)
+   6  7 	b_C1_C4_mid
+   7  8 	b_C4_C4_mid
+   8  9 	b_C4_C1_end
+  10 11 	b_C1_C4_mid
+  11 12 	b_C4_C4_mid
+  12 13 	b_C4_C1_end
+
+[angles]
+;  i  j  k 	name 	(using named angletypes from martini_v3.0.0_ffbonded_v2.itp)
+;  i  j  k 	funct 	angle 	force.c.
+; Orient the headgroup and linker
+   1  2  3   2 	150 	35 	; N1-N2-CN
+   3  4  5   2 	120 	35 	; CN-GLA-CX
+   4  5 10   2 	100 	25 	; GLA-CX-C1B
+   4  5  6   2 	100 	25 	; GLA-CX-C1A
+; Tail part (uses standard Martini tail rules)
+   5  6  7   2 	140 	15 	; CX-C1A-D2A
+   5 10 11   1 	140 	15 	; CX-C1B-D2B
+   6  7  8 	a_C1_C4_C4_def
+   7  8  9 	a_C4_C4_C1_def
+  10 11 12 	a_C1_C4_C4_def
+  11 12 13 	a_C4_C4_C1_def
+
+[exclusions]
+; i  j  k  ...
+6 10
+[ pairs ]
+6 10 1 4.100000e-01    2.350000e+00
+
+
+
+;;;;;; Martini lipid topology for di-C22:1, generated using:
+; The Martini lipid itp generator version M3.l01  Args are: -alname DEPP -alhead 'PP' -altail 'CCDCC CCDCC'
+; WARNING: Lipids topology was generated following the Martini 3.0 guidelines but not all lipid head group and tail combinations
+;          have been tested; used with care and see <M3lipid main ref> for guidance.
+;
+; Description:
+;   Piperizine head +2 charge
+; Parameterization:
+;   This topology follows the standard Martini 3.0 lipid definitions and building block rules.
+; Reference(s): 
+;   L. Kjølbye et al. Ionizable Lipids, TBD and K.B. Pedersen et al.  TBD Martini 3 lipids TBD and P.C.T. Souza et al. Martini 3: a general purpose force field for coarse-grained molecular dynamics, 
+;   Nat. Methods; 2021. doi: 10.1038/s41592-021-01098-9
+; Created: 2025.03.20
+;
+; Molecular topology and mapping of indices:
+;@INSANE alhead=PP, altail=CCDCC CCDCC, alname=DEPP, charge=2.0
+;@RESNTEST DEP==DEPP if: atoms[0]==NP1 
+;@BEADS NP1 NP2 CN GLA CX C1A C2A D3A C4A C5A C1B C2B D3B C4B C5B 
+;@BONDS NP1-NP2 NP2-CN CN-GLA GLA-CX CX-C1A CX-C1B C1A-C2A C2A-D3A D3A-C4A C4A-C5A C1B-C2B C2B-D3B D3B-C4B C4B-C5B 
+;
+
+[moleculetype]
+; molname      nrexcl
+  DEPP          1
+
+[atoms]
+; id 	type 	resnr 	residu 	atom 	cgnr 	charge    (mass)
+   1    Q2p   1  DEPP  NP1    1 	1
+   2  Q2p     1  DEPP  NP2    2 	1
+   3   C3     1  DEPP   CN   3 	0
+   4   SN4a   1  DEPP  GLA   4 	0
+   5   C2     1  DEPP   CX   5 	0
+   6     C1   1  DEPP  C1A   6 	0
+   7     C1   1  DEPP  C2A   7 	0
+   8    C4h   1  DEPP  D3A   8 	0
+   9     C1   1  DEPP  C4A   9 	0
+  10     C1   1  DEPP  C5A  10 	0
+  11     C1   1  DEPP  C1B  11 	0
+  12     C1   1  DEPP  C2B  12 	0
+  13    C4h   1  DEPP  D3B  13 	0
+  14     C1   1  DEPP  C4B  14 	0
+  15     C1   1  DEPP  C5B  15 	0
+
+[bonds]
+;  i  j 	name 	(using named bondtypes from martini_v3.0.0_ffbonded_v2.itp)
+;  i  j 	funct 	force.c.
+; Headgroup and linker bonds
+   1  2   1 	0.37 	2500 	; NP1-NP2
+   2  3   1 	0.45 	2500 	; NP2-CN
+   3  4   1 	0.45 	2500 	; CN-GLA
+   4  5   1 	0.37 	5000 	; GLA-CX
+   5  6   1 	0.47 	5000 	; CX-C1A
+   5 11   1 	0.47 	5000 	; CX-C1B
+; Lipid tail (uses standard Martini tail rules)
+   6  7 	b_C1_C1_mid
+   7  8 	b_C1_C4_mid
+   8  9 	b_C4_C1_mid
+   9 10 	b_C1_C1_end
+  11 12 	b_C1_C1_mid
+  12 13 	b_C1_C4_mid
+  13 14 	b_C4_C1_mid
+  14 15 	b_C1_C1_end
+
+[angles]
+;  i  j  k 	name 	(using named angletypes from martini_v3.0.0_ffbonded_v2.itp)
+;  i  j  k 	funct 	angle 	force.c.
+; Orient the headgroup and linker
+   1  2  3   2 	150 	35 	; N1-N2-CN
+   3  4  5   2 	120 	35 	; CN-GLA-CX
+   4  5 11   2 	100 	25 	; GLA-CX-C1B
+   4  5  6   2 	100 	25 	; GLA-CX-C1A
+; Tail part (uses standard Martini tail rules)
+   5  6  7   2 	155 	25 	; CX-C1A-C2A
+   5 11 12   1 	155 	25 	; CX-C1B-C2B
+   6  7  8 	a_C1_C1_C4_def
+   7  8  9 	a_C1_C4_C1_def
+   8  9 10 	a_C4_C1_C1_def
+  11 12 13 	a_C1_C1_C4_def
+  12 13 14 	a_C1_C4_C1_def
+  13 14 15 	a_C4_C1_C1_def
+
+[exclusions]
+; i  j  k  ...
+6 11
+[ pairs ]
+6 11 1 4.100000e-01    2.350000e+00
+
+
+
+;;;;;; Martini lipid topology for di-C24:1, generated using:
+; The Martini lipid itp generator version M3.l01  Args are: -alname DNPP -alhead 'PP' -altail 'cCCDCC cCCDCC'
+; WARNING: Lipids topology was generated following the Martini 3.0 guidelines but not all lipid head group and tail combinations
+;          have been tested; used with care and see <M3lipid main ref> for guidance.
+;
+; Description:
+;   Piperizine head +2 charge
+; Parameterization:
+;   This topology follows the standard Martini 3.0 lipid definitions and building block rules.
+; Reference(s): 
+;   L. Kjølbye et al. Ionizable Lipids, TBD and K.B. Pedersen et al.  TBD Martini 3 lipids TBD and P.C.T. Souza et al. Martini 3: a general purpose force field for coarse-grained molecular dynamics, 
+;   Nat. Methods; 2021. doi: 10.1038/s41592-021-01098-10
+; Created: 2025.03.20
+;
+; Molecular topology and mapping of indices:
+;@INSANE alhead=PP, altail=CCCDCC CCCDCC, alname=DNPP, charge=2.0
+;@RESNTEST DNP==DNPP if: atoms[0]==NP1 
+;@BEADS NP1 NP2 CN GLA CX C1A C2A C3A D4A C5A C6A C1B C2B C3B D4B C5B C6B 
+;@BONDS NP1-NP2 NP2-CN CN-GLA GLA-CX CX-C1A CX-C1B C1A-C2A C2A-C3A C3A-D4A D4A-C5A C5A-C6A C1B-C2B C2B-C3B C3B-D4B D4B-C5B C5B-C6B 
+;
+
+[moleculetype]
+; molname      nrexcl
+  DNPP          1
+
+[atoms]
+; id 	type 	resnr 	residu 	atom 	cgnr 	charge    (mass)
+   1    Q2p   1  DNPP  NP1    1 	1
+   2  Q2p     1  DNPP  NP2    2 	1
+   3   C3     1  DNPP   CN   3 	0
+   4   SN4a   1  DNPP  GLA   4 	0
+   5   C2     1  DNPP   CX   5 	0
+   6    SC1   1  DNPP  C1A   6 	0
+   7     C1   1  DNPP  C2A   7 	0
+   8     C1   1  DNPP  C3A   8 	0
+   9    C4h   1  DNPP  D4A   9 	0
+  10     C1   1  DNPP  C5A  10 	0
+  11     C1   1  DNPP  C6A  11 	0
+  12    SC1   1  DNPP  C1B  12 	0
+  13     C1   1  DNPP  C2B  13 	0
+  14     C1   1  DNPP  C3B  14 	0
+  15    C4h   1  DNPP  D4B  15 	0
+  16     C1   1  DNPP  C5B  16 	0
+  17     C1   1  DNPP  C6B  17 	0
+
+[bonds]
+;  i  j 	name 	(using named bondtypes from martini_v3.0.0_ffbonded_v2.itp)
+;  i  j 	funct 	force.c.
+; Headgroup and linker bonds
+   1  2   1 	0.37 	2500 	; NP1-NP2
+   2  3   1 	0.45 	2500 	; NP2-CN
+   3  4   1 	0.45 	2500 	; CN-GLA
+   4  5   1 	0.37 	5000 	; GLA-CX
+   5  6   1 	0.47 	5000 	; CX-C1A
+   5 12   1 	0.47 	5000 	; CX-C1B
+; Lipid tail (uses standard Martini tail rules)
+   6  7 	b_SC1_C1_mid
+   7  8 	b_C1_C1_mid
+   8  9 	b_C1_C4_mid
+   9 10 	b_C4_C1_mid
+  10 11 	b_C1_C1_end
+  12 13 	b_SC1_C1_mid
+  13 14 	b_C1_C1_mid
+  14 15 	b_C1_C4_mid
+  15 16 	b_C4_C1_mid
+  16 17 	b_C1_C1_end
+
+[angles]
+;  i  j  k 	name 	(using named angletypes from martini_v3.0.0_ffbonded_v2.itp)
+;  i  j  k 	funct 	angle 	force.c.
+; Orient the headgroup and linker
+   1  2  3   2 	150 	35 	; N1-N2-CN
+   3  4  5   2 	120 	35 	; CN-GLA-CX
+   4  5 12   2 	100 	25 	; GLA-CX-C1B
+   4  5  6   2 	100 	25 	; GLA-CX-C1A
+; Tail part (uses standard Martini tail rules)
+   6  7  8 	a_C1_C1_C1_def
+   7  8  9 	a_C1_C1_C4_def
+   8  9 10 	a_C1_C4_C1_def
+   9 10 11 	a_C4_C1_C1_def
+  12 13 14 	a_C1_C1_C1_def
+  13 14 15 	a_C1_C1_C4_def
+  14 15 16 	a_C1_C4_C1_def
+  15 16 17 	a_C4_C1_C1_def
+
+[exclusions]
+; i  j  k  ...
+6 12
+[ pairs ]
+6 12 1 4.100000e-01    2.350000e+00
+
+
+
+;;;;;; Martini lipid topology for C18:0/18:1, generated using:
+; The Martini lipid itp generator version M3.l01  Args are: -alname SOPP -alhead 'PP' -altail 'CCCC CDCC'
+; WARNING: Lipids topology was generated following the Martini 3.0 guidelines but not all lipid head group and tail combinations
+;          have been tested; used with care and see <M3lipid main ref> for guidance.
+;
+; Description:
+;   Piperizine head +2 charge
+; Parameterization:
+;   This topology follows the standard Martini 3.0 lipid definitions and building block rules.
+; Reference(s): 
+;   L. Kjølbye et al. Ionizable Lipids, TBD and K.B. Pedersen et al.  TBD Martini 3 lipids TBD and P.C.T. Souza et al. Martini 3: a general purpose force field for coarse-grained molecular dynamics, 
+;   Nat. Methods; 2021. doi: 10.1038/s41592-021-01098-11
+; Created: 2025.03.20
+;
+; Molecular topology and mapping of indices:
+;@INSANE alhead=PP, altail=CCCC CDCC, alname=SOPP, charge=2.0
+;@RESNTEST SOP==SOPP if: atoms[0]==NP1 
+;@BEADS NP1 NP2 CN GLA CX C1A C2A C3A C4A C1B D2B C3B C4B 
+;@BONDS NP1-NP2 NP2-CN CN-GLA GLA-CX CX-C1A CX-C1B C1A-C2A C2A-C3A C3A-C4A C1B-D2B D2B-C3B C3B-C4B 
+;
+
+[moleculetype]
+; molname      nrexcl
+  SOPP          1
+
+[atoms]
+; id 	type 	resnr 	residu 	atom 	cgnr 	charge    (mass)
+   1    Q2p   1  SOPP  NP1    1 	1
+   2  Q2p     1  SOPP  NP2    2 	1
+   3   C3     1  SOPP   CN   3 	0
+   4   SN4a   1  SOPP  GLA   4 	0
+   5   C2     1  SOPP   CX   5 	0
+   6     C1   1  SOPP  C1A   6 	0
+   7     C1   1  SOPP  C2A   7 	0
+   8     C1   1  SOPP  C3A   8 	0
+   9     C1   1  SOPP  C4A   9 	0
+  10     C1   1  SOPP  C1B  10 	0
+  11    C4h   1  SOPP  D2B  11 	0
+  12     C1   1  SOPP  C3B  12 	0
+  13     C1   1  SOPP  C4B  13 	0
+
+[bonds]
+;  i  j 	name 	(using named bondtypes from martini_v3.0.0_ffbonded_v2.itp)
+;  i  j 	funct 	force.c.
+; Headgroup and linker bonds
+   1  2   1 	0.37 	2500 	; NP1-NP2
+   2  3   1 	0.45 	2500 	; NP2-CN
+   3  4   1 	0.45 	2500 	; CN-GLA
+   4  5   1 	0.37 	5000 	; GLA-CX
+   5  6   1 	0.47 	5000 	; CX-C1A
+   5 10   1 	0.47 	5000 	; CX-C1B
+; Lipid tail (uses standard Martini tail rules)
+   6  7 	b_C1_C1_mid
+   7  8 	b_C1_C1_mid
+   8  9 	b_C1_C1_end
+  10 11 	b_C1_C4_mid
+  11 12 	b_C4_C1_mid
+  12 13 	b_C1_C1_end
+
+[angles]
+;  i  j  k 	name 	(using named angletypes from martini_v3.0.0_ffbonded_v2.itp)
+;  i  j  k 	funct 	angle 	force.c.
+; Orient the headgroup and linker
+   1  2  3   2 	150 	35 	; N1-N2-CN
+   3  4  5   2 	120 	35 	; CN-GLA-CX
+   4  5 10   2 	100 	25 	; GLA-CX-C1B
+   4  5  6   2 	100 	25 	; GLA-CX-C1A
+; Tail part (uses standard Martini tail rules)
+   5  6  7   2 	155 	25 	; CX-C1A-C2A
+   5 10 11   1 	140 	15 	; CX-C1B-D2B
+   6  7  8 	a_C1_C1_C1_def
+   7  8  9 	a_C1_C1_C1_def
+  10 11 12 	a_C1_C4_C1_def
+  11 12 13 	a_C4_C1_C1_def
+
+[exclusions]
+; i  j  k  ...
+6 10
+[ pairs ]
+6 10 1 4.100000e-01    2.350000e+00
+
+
+
+;;;;;; Martini lipid topology for C18:0/18:2, generated using:
+; The Martini lipid itp generator version M3.l01  Args are: -alname SLPP -alhead 'PP' -altail 'CCCC CDDC'
+; WARNING: Lipids topology was generated following the Martini 3.0 guidelines but not all lipid head group and tail combinations
+;          have been tested; used with care and see <M3lipid main ref> for guidance.
+;
+; Description:
+;   Piperizine head +2 charge
+; Parameterization:
+;   This topology follows the standard Martini 3.0 lipid definitions and building block rules.
+; Reference(s): 
+;   L. Kjølbye et al. Ionizable Lipids, TBD and K.B. Pedersen et al.  TBD Martini 3 lipids TBD and P.C.T. Souza et al. Martini 3: a general purpose force field for coarse-grained molecular dynamics, 
+;   Nat. Methods; 2021. doi: 10.1038/s41592-021-01098-12
+; Created: 2025.03.20
+;
+; Molecular topology and mapping of indices:
+;@INSANE alhead=PP, altail=CCCC CDDC, alname=SLPP, charge=2.0
+;@RESNTEST SLP==SLPP if: atoms[0]==NP1 
+;@BEADS NP1 NP2 CN GLA CX C1A C2A C3A C4A C1B D2B D3B C4B 
+;@BONDS NP1-NP2 NP2-CN CN-GLA GLA-CX CX-C1A CX-C1B C1A-C2A C2A-C3A C3A-C4A C1B-D2B D2B-D3B D3B-C4B 
+;
+
+[moleculetype]
+; molname      nrexcl
+  SLPP          1
+
+[atoms]
+; id 	type 	resnr 	residu 	atom 	cgnr 	charge    (mass)
+   1    Q2p   1  SLPP  NP1    1 	1
+   2  Q2p     1  SLPP  NP2    2 	1
+   3   C3     1  SLPP   CN   3 	0
+   4   SN4a   1  SLPP  GLA   4 	0
+   5   C2     1  SLPP   CX   5 	0
+   6     C1   1  SLPP  C1A   6 	0
+   7     C1   1  SLPP  C2A   7 	0
+   8     C1   1  SLPP  C3A   8 	0
+   9     C1   1  SLPP  C4A   9 	0
+  10     C1   1  SLPP  C1B  10 	0
+  11    C4h   1  SLPP  D2B  11 	0
+  12    C4h   1  SLPP  D3B  12 	0
+  13     C1   1  SLPP  C4B  13 	0
+
+[bonds]
+;  i  j 	name 	(using named bondtypes from martini_v3.0.0_ffbonded_v2.itp)
+;  i  j 	funct 	force.c.
+; Headgroup and linker bonds
+   1  2   1 	0.37 	2500 	; NP1-NP2
+   2  3   1 	0.45 	2500 	; NP2-CN
+   3  4   1 	0.45 	2500 	; CN-GLA
+   4  5   1 	0.37 	5000 	; GLA-CX
+   5  6   1 	0.47 	5000 	; CX-C1A
+   5 10   1 	0.47 	5000 	; CX-C1B
+; Lipid tail (uses standard Martini tail rules)
+   6  7 	b_C1_C1_mid
+   7  8 	b_C1_C1_mid
+   8  9 	b_C1_C1_end
+  10 11 	b_C1_C4_mid
+  11 12 	b_C4_C4_mid
+  12 13 	b_C4_C1_end
+
+[angles]
+;  i  j  k 	name 	(using named angletypes from martini_v3.0.0_ffbonded_v2.itp)
+;  i  j  k 	funct 	angle 	force.c.
+; Orient the headgroup and linker
+   1  2  3   2 	150 	35 	; N1-N2-CN
+   3  4  5   2 	120 	35 	; CN-GLA-CX
+   4  5 10   2 	100 	25 	; GLA-CX-C1B
+   4  5  6   2 	100 	25 	; GLA-CX-C1A
+; Tail part (uses standard Martini tail rules)
+   5  6  7   2 	155 	25 	; CX-C1A-C2A
+   5 10 11   1 	140 	15 	; CX-C1B-D2B
+   6  7  8 	a_C1_C1_C1_def
+   7  8  9 	a_C1_C1_C1_def
+  10 11 12 	a_C1_C4_C4_def
+  11 12 13 	a_C4_C4_C1_def
+
+[exclusions]
+; i  j  k  ...
+6 10
+[ pairs ]
+6 10 1 4.100000e-01    2.350000e+00
+
+
+
+;;;;;; Martini lipid topology for C18:1/18:2, generated using:
+; The Martini lipid itp generator version M3.l01  Args are: -alname OLPP -alhead 'PP' -altail 'CDCC CDDC'
+; WARNING: Lipids topology was generated following the Martini 3.0 guidelines but not all lipid head group and tail combinations
+;          have been tested; used with care and see <M3lipid main ref> for guidance.
+;
+; Description:
+;   Piperizine head +2 charge
+; Parameterization:
+;   This topology follows the standard Martini 3.0 lipid definitions and building block rules.
+; Reference(s): 
+;   L. Kjølbye et al. Ionizable Lipids, TBD and K.B. Pedersen et al.  TBD Martini 3 lipids TBD and P.C.T. Souza et al. Martini 3: a general purpose force field for coarse-grained molecular dynamics, 
+;   Nat. Methods; 2021. doi: 10.1038/s41592-021-01098-13
+; Created: 2025.03.20
+;
+; Molecular topology and mapping of indices:
+;@INSANE alhead=PP, altail=CDCC CDDC, alname=OLPP, charge=2.0
+;@RESNTEST OLP==OLPP if: atoms[0]==NP1 
+;@BEADS NP1 NP2 CN GLA CX C1A D2A C3A C4A C1B D2B D3B C4B 
+;@BONDS NP1-NP2 NP2-CN CN-GLA GLA-CX CX-C1A CX-C1B C1A-D2A D2A-C3A C3A-C4A C1B-D2B D2B-D3B D3B-C4B 
+;
+
+[moleculetype]
+; molname      nrexcl
+  OLPP          1
+
+[atoms]
+; id 	type 	resnr 	residu 	atom 	cgnr 	charge    (mass)
+   1    Q2p   1  OLPP  NP1    1 	1
+   2  Q2p     1  OLPP  NP2    2 	1
+   3   C3     1  OLPP   CN   3 	0
+   4   SN4a   1  OLPP  GLA   4 	0
+   5   C2     1  OLPP   CX   5 	0
+   6     C1   1  OLPP  C1A   6 	0
+   7    C4h   1  OLPP  D2A   7 	0
+   8     C1   1  OLPP  C3A   8 	0
+   9     C1   1  OLPP  C4A   9 	0
+  10     C1   1  OLPP  C1B  10 	0
+  11    C4h   1  OLPP  D2B  11 	0
+  12    C4h   1  OLPP  D3B  12 	0
+  13     C1   1  OLPP  C4B  13 	0
+
+[bonds]
+;  i  j 	name 	(using named bondtypes from martini_v3.0.0_ffbonded_v2.itp)
+;  i  j 	funct 	force.c.
+; Headgroup and linker bonds
+   1  2   1 	0.37 	2500 	; NP1-NP2
+   2  3   1 	0.45 	2500 	; NP2-CN
+   3  4   1 	0.45 	2500 	; CN-GLA
+   4  5   1 	0.37 	5000 	; GLA-CX
+   5  6   1 	0.47 	5000 	; CX-C1A
+   5 10   1 	0.47 	5000 	; CX-C1B
+; Lipid tail (uses standard Martini tail rules)
+   6  7 	b_C1_C4_mid
+   7  8 	b_C4_C1_mid
+   8  9 	b_C1_C1_end
+  10 11 	b_C1_C4_mid
+  11 12 	b_C4_C4_mid
+  12 13 	b_C4_C1_end
+
+[angles]
+;  i  j  k 	name 	(using named angletypes from martini_v3.0.0_ffbonded_v2.itp)
+;  i  j  k 	funct 	angle 	force.c.
+; Orient the headgroup and linker
+   1  2  3   2 	150 	35 	; N1-N2-CN
+   3  4  5   2 	120 	35 	; CN-GLA-CX
+   4  5 10   2 	100 	25 	; GLA-CX-C1B
+   4  5  6   2 	100 	25 	; GLA-CX-C1A
+; Tail part (uses standard Martini tail rules)
+   5  6  7   2 	140 	15 	; CX-C1A-D2A
+   5 10 11   1 	140 	15 	; CX-C1B-D2B
+   6  7  8 	a_C1_C4_C1_def
+   7  8  9 	a_C4_C1_C1_def
+  10 11 12 	a_C1_C4_C4_def
+  11 12 13 	a_C4_C4_C1_def
+
+[exclusions]
+; i  j  k  ...
+6 10
+[ pairs ]
+6 10 1 4.100000e-01    2.350000e+00
+
+
+
+;;;;;; Martini lipid topology for C18:1/22:1, generated using:
+; The Martini lipid itp generator version M3.l01  Args are: -alname OEPP -alhead 'PP' -altail 'CDCC CCDCC'
+; WARNING: Lipids topology was generated following the Martini 3.0 guidelines but not all lipid head group and tail combinations
+;          have been tested; used with care and see <M3lipid main ref> for guidance.
+;
+; Description:
+;   Piperizine head +2 charge
+; Parameterization:
+;   This topology follows the standard Martini 3.0 lipid definitions and building block rules.
+; Reference(s): 
+;   L. Kjølbye et al. Ionizable Lipids, TBD and K.B. Pedersen et al.  TBD Martini 3 lipids TBD and P.C.T. Souza et al. Martini 3: a general purpose force field for coarse-grained molecular dynamics, 
+;   Nat. Methods; 2021. doi: 10.1038/s41592-021-01098-14
+; Created: 2025.03.20
+;
+; Molecular topology and mapping of indices:
+;@INSANE alhead=PP, altail=CDCC CCDCC, alname=OEPP, charge=2.0
+;@RESNTEST OEP==OEPP if: atoms[0]==NP1 
+;@BEADS NP1 NP2 CN GLA CX C1A D2A C3A C4A C1B C2B D3B C4B C5B 
+;@BONDS NP1-NP2 NP2-CN CN-GLA GLA-CX CX-C1A CX-C1B C1A-D2A D2A-C3A C3A-C4A C1B-C2B C2B-D3B D3B-C4B C4B-C5B 
+;
+
+[moleculetype]
+; molname      nrexcl
+  OEPP          1
+
+[atoms]
+; id 	type 	resnr 	residu 	atom 	cgnr 	charge    (mass)
+   1    Q2p   1  OEPP  NP1    1 	1
+   2  Q2p     1  OEPP  NP2    2 	1
+   3   C3     1  OEPP   CN   3 	0
+   4   SN4a   1  OEPP  GLA   4 	0
+   5   C2     1  OEPP   CX   5 	0
+   6     C1   1  OEPP  C1A   6 	0
+   7    C4h   1  OEPP  D2A   7 	0
+   8     C1   1  OEPP  C3A   8 	0
+   9     C1   1  OEPP  C4A   9 	0
+  10     C1   1  OEPP  C1B  10 	0
+  11     C1   1  OEPP  C2B  11 	0
+  12    C4h   1  OEPP  D3B  12 	0
+  13     C1   1  OEPP  C4B  13 	0
+  14     C1   1  OEPP  C5B  14 	0
+
+[bonds]
+;  i  j 	name 	(using named bondtypes from martini_v3.0.0_ffbonded_v2.itp)
+;  i  j 	funct 	force.c.
+; Headgroup and linker bonds
+   1  2   1 	0.37 	2500 	; NP1-NP2
+   2  3   1 	0.45 	2500 	; NP2-CN
+   3  4   1 	0.45 	2500 	; CN-GLA
+   4  5   1 	0.37 	5000 	; GLA-CX
+   5  6   1 	0.47 	5000 	; CX-C1A
+   5 10   1 	0.47 	5000 	; CX-C1B
+; Lipid tail (uses standard Martini tail rules)
+   6  7 	b_C1_C4_mid
+   7  8 	b_C4_C1_mid
+   8  9 	b_C1_C1_end
+  10 11 	b_C1_C1_mid
+  11 12 	b_C1_C4_mid
+  12 13 	b_C4_C1_mid
+  13 14 	b_C1_C1_end
+
+[angles]
+;  i  j  k 	name 	(using named angletypes from martini_v3.0.0_ffbonded_v2.itp)
+;  i  j  k 	funct 	angle 	force.c.
+; Orient the headgroup and linker
+   1  2  3   2 	150 	35 	; N1-N2-CN
+   3  4  5   2 	120 	35 	; CN-GLA-CX
+   4  5 10   2 	100 	25 	; GLA-CX-C1B
+   4  5  6   2 	100 	25 	; GLA-CX-C1A
+; Tail part (uses standard Martini tail rules)
+   5  6  7   2 	140 	15 	; CX-C1A-D2A
+   5 10 11   1 	155 	25 	; CX-C1B-C2B
+   6  7  8 	a_C1_C4_C1_def
+   7  8  9 	a_C4_C1_C1_def
+  10 11 12 	a_C1_C1_C4_def
+  11 12 13 	a_C1_C4_C1_def
+  12 13 14 	a_C4_C1_C1_def
+
+[exclusions]
+; i  j  k  ...
+6 10
+[ pairs ]
+6 10 1 4.100000e-01    2.350000e+00
+
+
+
+;;;;;; Martini lipid topology for C18:2/18:3, generated using:
+; The Martini lipid itp generator version M3.l01  Args are: -alname LFPP -alhead 'PP' -altail 'CDDC CDDD'
+; WARNING: Lipids topology was generated following the Martini 3.0 guidelines but not all lipid head group and tail combinations
+;          have been tested; used with care and see <M3lipid main ref> for guidance.
+;
+; Description:
+;   Piperizine head +2 charge
+; Parameterization:
+;   This topology follows the standard Martini 3.0 lipid definitions and building block rules.
+; Reference(s): 
+;   L. Kjølbye et al. Ionizable Lipids, TBD and K.B. Pedersen et al.  TBD Martini 3 lipids TBD and P.C.T. Souza et al. Martini 3: a general purpose force field for coarse-grained molecular dynamics, 
+;   Nat. Methods; 2021. doi: 10.1038/s41592-021-01098-15
+; Created: 2025.03.20
+;
+; Molecular topology and mapping of indices:
+;@INSANE alhead=PP, altail=CDDC CDDD, alname=LFPP, charge=2.0
+;@RESNTEST LFP==LFPP if: atoms[0]==NP1 
+;@BEADS NP1 NP2 CN GLA CX C1A D2A D3A C4A C1B D2B D3B D4B 
+;@BONDS NP1-NP2 NP2-CN CN-GLA GLA-CX CX-C1A CX-C1B C1A-D2A D2A-D3A D3A-C4A C1B-D2B D2B-D3B D3B-D4B 
+;
+
+[moleculetype]
+; molname      nrexcl
+  LFPP          1
+
+[atoms]
+; id 	type 	resnr 	residu 	atom 	cgnr 	charge    (mass)
+   1    Q2p   1  LFPP  NP1    1 	1
+   2  Q2p     1  LFPP  NP2    2 	1
+   3   C3     1  LFPP   CN   3 	0
+   4   SN4a   1  LFPP  GLA   4 	0
+   5   C2     1  LFPP   CX   5 	0
+   6     C1   1  LFPP  C1A   6 	0
+   7    C4h   1  LFPP  D2A   7 	0
+   8    C4h   1  LFPP  D3A   8 	0
+   9     C1   1  LFPP  C4A   9 	0
+  10     C1   1  LFPP  C1B  10 	0
+  11    C4h   1  LFPP  D2B  11 	0
+  12    C4h   1  LFPP  D3B  12 	0
+  13    C4h   1  LFPP  D4B  13 	0
+
+[bonds]
+;  i  j 	name 	(using named bondtypes from martini_v3.0.0_ffbonded_v2.itp)
+;  i  j 	funct 	force.c.
+; Headgroup and linker bonds
+   1  2   1 	0.37 	2500 	; NP1-NP2
+   2  3   1 	0.45 	2500 	; NP2-CN
+   3  4   1 	0.45 	2500 	; CN-GLA
+   4  5   1 	0.37 	5000 	; GLA-CX
+   5  6   1 	0.47 	5000 	; CX-C1A
+   5 10   1 	0.47 	5000 	; CX-C1B
+; Lipid tail (uses standard Martini tail rules)
+   6  7 	b_C1_C4_mid
+   7  8 	b_C4_C4_mid
+   8  9 	b_C4_C1_end
+  10 11 	b_C1_C4_mid
+  11 12 	b_C4_C4_mid
+  12 13 	b_C4_C4_end
+
+[angles]
+;  i  j  k 	name 	(using named angletypes from martini_v3.0.0_ffbonded_v2.itp)
+;  i  j  k 	funct 	angle 	force.c.
+; Orient the headgroup and linker
+   1  2  3   2 	150 	35 	; N1-N2-CN
+   3  4  5   2 	120 	35 	; CN-GLA-CX
+   4  5 10   2 	100 	25 	; GLA-CX-C1B
+   4  5  6   2 	100 	25 	; GLA-CX-C1A
+; Tail part (uses standard Martini tail rules)
+   5  6  7   2 	140 	15 	; CX-C1A-D2A
+   5 10 11   1 	140 	15 	; CX-C1B-D2B
+   6  7  8 	a_C1_C4_C4_def
+   7  8  9 	a_C4_C4_C1_def
+  10 11 12 	a_C1_C4_C4_def
+  11 12 13 	a_C4_C4_C4_def
+
+[exclusions]
+; i  j  k  ...
+6 10
+[ pairs ]
+6 10 1 4.100000e-01    2.350000e+00
+
+
+

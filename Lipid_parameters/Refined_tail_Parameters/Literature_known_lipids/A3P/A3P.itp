@@ -1,0 +1,64 @@
+[ moleculetype ]
+A3P  1
+[ atoms ]
+; nr type resnr residue atom cgnr charge mass
+   1    P1         0    A3P     OH         1       0      72
+   2    SQ2p       0    A3P     NP         2       1      54
+   3    C2         0    A3P     CA         3       0      72
+   4    SN4a       0    A3P     GLA        4       0      54
+   5    SC2        0    A3P     CAX        5       0      54
+   6    C1         0    A3P     CA1        6       0      72
+   7    SC1        0    A3P     CA2        7       0      54
+   8    C1         0    A3P     CA3        8       0      72
+   9    C2         0    A3P     CB         9       0      72
+  10    SN4a       0    A3P     GLB       10       0      54
+  11    SC2        0    A3P     CBX       11       0      54
+  12    C1         0    A3P     CB1       12       0      72
+  13    SC1        0    A3P     CB2       13       0      54
+  14    C1         0    A3P     CB3       14       0      72
+
+
+[ bonds ]
+; i  j  funct length
+   1       2       1    0.52    2500  ;OH-NP
+   2       3       1    0.52    2500  ;NP-CA
+   2       9       1    0.52    2500  ;NP-CB
+   3       4       1    0.37    5000  ;CA-GLA 
+   9      10       1    0.37    5000  ;CB-GLB 
+   4       5       1    0.37    5000  ;GLA-CAX 
+   5       6       1    0.47    5000  ;CAX-CA1 
+   5       7       1    0.37    5000  ;CAX-CA2 
+   7       8       b_SC1_C1_end       ;CA2-CA3 
+  10      11       1    0.37    5000  ;GLB-CBX 
+  11      12       1    0.47    5000  ;CBX-CB1 
+  11      13       1    0.37    5000  ;CBX-CB2 
+  13      14       b_SC1_C1_end       ;CB2-CB3 
+
+[ angles ]
+;  i  j  k   funct   angle   force.c.
+   1       2       3       2     115      30  ;OH-NP-CA
+   1       2       9       2     115      30  ;OH-NP-CB
+   3       2       9       2     110      40  ;CA-NP-CB
+   3       4       5       2     120      35  ;CA-GLA-CAX  
+   4       5       6       2     100      25  ;GLA-CAX-CA1 
+   4       5       7       2     100      25  ;GLA-CAX-CA2 
+   6       5       7       2     125      25  ;CA1-CAX-CA2 
+   5       7       8       2     155      35  ;CAX-CA2-CA3 
+   9      10      11       2     120      35  ;CB-GLB-CBX  
+  10      11      12       2     100      25  ;GLB-CBX-CB1 
+  10      11      13       2     100      25  ;GLB-CBX-CB2 
+  12      11      13       2     125      25  ;CB1-CBX-CB2 
+  11      12      14       2     155      35  ;CBX-CB2-CB3 
+
+
+
+[ exclusions ]
+1 2 3 9 ;OH-NP-CA-CB
+3 9     ;CA-CB
+6  7    ;CA1-CA2
+12 13   ;CB1-CB2
+
+[ pairs ]
+6   7  1 4.100000e-01    2.350000e+00
+12 13  1 4.100000e-01    2.350000e+00
+
