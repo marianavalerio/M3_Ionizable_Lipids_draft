@@ -7,7 +7,8 @@ The component ratios and structural details may need to be adjusted based on you
 
 #### Commands used for setting up an LNP with an inverse hexagonal core. 
 Input files for the three LNPs simulated in the paper can also be found in this folder.
-![LNP_hex](inverse_hexagonal_core.png)
+<img src="inverse_hexagonal_core.png" alt="LNP hex" width="300" align="left"/>
+
 
 #### Commands used for constructing a 'Bleb' like LNP.
 Note that this is a showcase protocol not optimized to run Molecular Dynamics on the resulting structure.
