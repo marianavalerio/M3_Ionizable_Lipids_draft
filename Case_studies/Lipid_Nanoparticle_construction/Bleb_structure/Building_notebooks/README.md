@@ -14,7 +14,7 @@ To use these guidelines effectively, you should have in depth knowledge of the f
 - TS2CG
 - freud
 - mdvwhole
-- 
+
 If you are not familiar with these tools, please complete introductory tutorials for each before attempting to use this protocol.
 
 #### Instalation Prerequisites
