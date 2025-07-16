@@ -15,5 +15,7 @@ Input files for the three LNPs simulated in the paper can also be found in this 
 #### Commands used for constructing a 'Bleb' like LNP.  
 Note that this is a showcase protocol not optimized to run Molecular Dynamics on the resulting structure.
 
-![LNP_bleb](Bleb_structure.png)
 
+<p>
+  <img src="Bleb_structure.png" alt="LNP_bleb" width="300" style="display: block; margin-top: 10px; margin-bottom: 20px;"/>
+</p>
